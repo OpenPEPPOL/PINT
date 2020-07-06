@@ -1362,9 +1362,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="true()" />
+  <xsl:when test="let $category := cac:TaxCategory/cbc:ID return let $rate := cac:TaxCategory/cbc:Percent return cbc:TaxableAmount = sum(//cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory[xs:decimal(cbc:Percent) = $rate and cbc:ID = $category]]/xs:decimal(cbc:LineExtensionAmount)) + sum(//cac:AllowanceCharge[cbc:ChargeIndicator=true()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) - sum(//cac:AllowanceCharge[cbc:ChargeIndicator=false()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount))" />
       <xsl:otherwise>
-        <svrl:failed-assert test="true()">
+        <svrl:failed-assert test="let $category := cac:TaxCategory/cbc:ID return let $rate := cac:TaxCategory/cbc:Percent return cbc:TaxableAmount = sum(//cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory[xs:decimal(cbc:Percent) = $rate and cbc:ID = $category]]/xs:decimal(cbc:LineExtensionAmount)) + sum(//cac:AllowanceCharge[cbc:ChargeIndicator=true()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) - sum(//cac:AllowanceCharge[cbc:ChargeIndicator=false()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount))">
           <xsl:attribute name="id">ibr-tax-08</xsl:attribute>
           <xsl:attribute name="flag">fatal</xsl:attribute>
           <xsl:attribute name="location">
