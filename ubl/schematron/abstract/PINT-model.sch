@@ -127,5 +127,6 @@
   </rule>
   <rule context="$Tax_Total">
       <assert test="$ibr-co-14" flag="fatal" id="ibr-co-14">[ibr-co-14]-Invoice total Tax amount (ibt-110) = Σ Tax category tax amount (ibt-117).</assert>
-  </rule>
+  </rule>iterm
+  
 </pattern>
