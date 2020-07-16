@@ -23,7 +23,7 @@
     <assert test="$ibr-52" flag="fatal" id="ibr-52">[ibr-52]-Each Additional supporting document (ibg-24) shall contain a Supporting document reference (ibt-122).    </assert>
   </rule>
   <rule context="$Amount_due">
-    <assert test="$ibr-66" flag="fatal" id="ibr-67">[ibr-67]-Invoice amount due for payment (ibt-115) shall have no more than 2 decimals.</assert>
+    <assert test="$ibr-67" flag="fatal" id="ibr-67">[ibr-67]-Invoice amount due for payment (ibt-115) shall have no more than 2 decimals.</assert>
     <assert test="$ibr-co-25" flag="fatal" id="ibr-co-25">[ibr-co-25]-In case the Amount due for payment (ibt-115) is positive, either the Payment due date (ibt-009) or the Payment terms (ibt-020) shall be present.</assert>
   </rule>
   <rule context="$Buyer_electronic_address">
@@ -71,7 +71,6 @@
     <assert test="$ibr-16" flag="fatal" id="ibr-16">[ibr-16]-An Invoice shall have at least one Invoice line (ibg-25)</assert>
     <assert test="$ibr-53" flag="fatal" id="ibr-53">[ibr-53]-If the Tax accounting currency code (ibt-006) is present, then the Invoice total Tax amount in accounting currency (ibt-111) shall be provided.</assert>
     <assert test="$ibr-co-15" flag="fatal" id="ibr-co-15">[ibr-co-15]-Invoice total amount with Tax (ibt-112) = Invoice total amount without Tax (ibt-109) + Invoice total Tax amount (ibt-110).</assert>
-    <assert test="$ibr-tax-01" flag="fatal" id="ibr-tax-01">[ibr-tax-01]-An Invoice that contains an Invoice line (ibg-25), a Document level allowance (ibg-20) or a Document level charge (ibg-21) with a TAX category code (ibt-151, ibt-095 or ibt-102) shall contain in the TAX breakdown (ibg-23) at least one identical TAX category code (ibt-118).</assert>
   </rule>
   <rule context="$Invoice_Line">
     <assert test="$ibr-21" flag="fatal" id="ibr-21">[ibr-21]-Each Invoice line (ibg-25) shall have an Invoice line identifier (ibt-126).</assert>
@@ -136,10 +135,6 @@
   </rule>
   <rule context="$Tax_Representative_postal_address">
     <assert test="$ibr-20" flag="fatal" id="ibr-20">[ibr-20]-The Seller tax representative postal address (ibg-12) shall contain a Tax representative country code (ibt-069), if the Seller (ibg-04) has a Seller tax representative party (ibg-11).</assert>
-  </rule>
-  <rule context="$Tax_subtotal">
-    <assert test="$ibr-tax-08" flag="fatal" id="ibr-tax-08">[ibr-tax-08]-For each combination of tax category rate (ibt-119) and tax category code (ibt-118), the tax category taxable amount (ibt-116) in a tax breakdown (ibg-23) shall equal the sum of Invoice line net amounts (ibt-131) plus the sum of document level charge amounts (ibt-099) minus the sum of document level allowance amounts (ibt-092) combination of tax category code (ibt-151, ibt-102, ibt-095) and the tax rate (ibt-152, ibt-103, ibt-096) is the same.</assert>
-    <assert test="$ibr-tax-09" flag="fatal" id="ibr-tax-09">[ibr-tax-09]-The tax category tax amount (ibt-117) in a tax breakdown (ibg-23) shall equal the tax category taxable amount (ibt-116) multiplied by the tax category rate (ibt-119).</assert>
   </rule>
   <rule context="$Tax_Total">
       <assert test="$ibr-co-14" flag="fatal" id="ibr-co-14">[ibr-co-14]-Invoice total Tax amount (ibt-110) = Σ Tax category tax amount (ibt-117).</assert>

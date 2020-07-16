@@ -68,8 +68,7 @@
   <param name="ibr-63" value="exists(@schemeID)"/>
   <param name="ibr-64" value="exists(@schemeID)"/>
   <param name="ibr-65" value="exists(@listID)"/>
-  <param name="ibr-66" value="string-length(substring-after(., '.')) &lt;= 2"/>
-  <param name="ibr-co-03" value="(exists(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and exists(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode))"/>
+  <param name="ibr-67" value="string-length(substring-after(., '.')) &lt;= 2"/>
   <param name="ibr-co-05" value="true()"/>
   <param name="ibr-co-06" value="true()"/>
   <param name="ibr-co-07" value="true()"/>
@@ -88,9 +87,6 @@
   <param name="ibr-co-24" value="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)"/>
   <param name="ibr-co-25" value="((. &gt; 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)"/>
   <param name="ibr-co-26" value="exists(cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)"/>
-  <param name="ibr-tax-01" value="every $category in (//cac:AllowanceCharge/cac:TaxCategory/normalize-space(cbc:ID), //cac:ClassifiedTaxCategory/normalize-space(cbc:ID)) satisfies  exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = $category])"/>
-  <param name="ibr-tax-08" value="let $category := cac:TaxCategory/cbc:ID return let $rate := cac:TaxCategory/cbc:Percent return cbc:TaxableAmount = sum(//cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory[xs:decimal(cbc:Percent) = $rate and cbc:ID = $category]]/xs:decimal(cbc:LineExtensionAmount)) + sum(//cac:AllowanceCharge[cbc:ChargeIndicator=true()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) - sum(//cac:AllowanceCharge[cbc:ChargeIndicator=false()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) "/>
-  <param name="ibr-tax-09" value="(abs(xs:decimal(cbc:TaxAmount)) - 1 &lt;  round((abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(cbc:TaxAmount)) + 1 &gt;  round((abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )"/>
   <param name="Invoice_Period" value="cac:InvoicePeriod"/>
   <param name="Document_totals" value="cac:LegalMonetaryTotal"/>
   <param name="Amount_due" value="cac:LegalMonetaryTotal/cbc:PayableAmount "/>
@@ -111,7 +107,6 @@
   <param name="Additional_supporting_documents" value="cac:AdditionalDocumentReference"/>
   <param name="Item_attributes" value="//cac:AdditionalItemProperty"/>
   <param name="Preceding_Invoice" value="cac:BillingReference"/>
-  <param name="Tax_subtotal" value="cac:TaxTotal/cac:TaxSubtotal"/>
   <param name="Invoice" value="/ubl:Invoice | /cn:CreditNote"/>
   <param name="Buyer_postal_address" value="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress"/>
   <param name="Deliver_to_address" value="cac:Delivery/cac:DeliveryLocation/cac:Address"/>
