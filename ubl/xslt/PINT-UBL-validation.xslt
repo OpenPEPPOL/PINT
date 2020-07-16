@@ -213,7 +213,7 @@
 
 
 	<!--RULE -->
-<xsl:template match="cac:AdditionalDocumentReference" mode="M11" priority="1026">
+<xsl:template match="cac:AdditionalDocumentReference" mode="M11" priority="1025">
     <svrl:fired-rule context="cac:AdditionalDocumentReference" />
 
 		<!--ASSERT -->
@@ -234,7 +234,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:LegalMonetaryTotal/cbc:PayableAmount " mode="M11" priority="1025">
+<xsl:template match="cac:LegalMonetaryTotal/cbc:PayableAmount " mode="M11" priority="1024">
     <svrl:fired-rule context="cac:LegalMonetaryTotal/cbc:PayableAmount " />
 
 		<!--ASSERT -->
@@ -270,7 +270,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID" mode="M11" priority="1024">
+<xsl:template match="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID" mode="M11" priority="1023">
     <svrl:fired-rule context="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID" />
 
 		<!--ASSERT -->
@@ -291,7 +291,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress" mode="M11" priority="1023">
+<xsl:template match="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress" mode="M11" priority="1022">
     <svrl:fired-rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress" />
 
 		<!--ASSERT -->
@@ -312,7 +312,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:Delivery/cac:DeliveryLocation/cac:Address" mode="M11" priority="1022">
+<xsl:template match="cac:Delivery/cac:DeliveryLocation/cac:Address" mode="M11" priority="1021">
     <svrl:fired-rule context="cac:Delivery/cac:DeliveryLocation/cac:Address" />
 
 		<!--ASSERT -->
@@ -333,7 +333,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = false()]" mode="M11" priority="1021">
+<xsl:template match="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = false()]" mode="M11" priority="1020">
     <svrl:fired-rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = false()]" />
 
 		<!--ASSERT -->
@@ -399,7 +399,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = true()]" mode="M11" priority="1020">
+<xsl:template match="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = true()]" mode="M11" priority="1019">
     <svrl:fired-rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = true()]" />
 
 		<!--ASSERT -->
@@ -465,7 +465,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:LegalMonetaryTotal" mode="M11" priority="1019">
+<xsl:template match="cac:LegalMonetaryTotal" mode="M11" priority="1018">
     <svrl:fired-rule context="cac:LegalMonetaryTotal" />
 
 		<!--ASSERT -->
@@ -606,7 +606,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="/ubl:Invoice | /cn:CreditNote" mode="M11" priority="1018">
+<xsl:template match="/ubl:Invoice | /cn:CreditNote" mode="M11" priority="1017">
     <svrl:fired-rule context="/ubl:Invoice | /cn:CreditNote" />
 
 		<!--ASSERT -->
@@ -788,26 +788,11 @@
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="every $category in (//cac:AllowanceCharge/cac:TaxCategory/normalize-space(cbc:ID), //cac:ClassifiedTaxCategory/normalize-space(cbc:ID)) satisfies  exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = $category])" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="every $category in (//cac:AllowanceCharge/cac:TaxCategory/normalize-space(cbc:ID), //cac:ClassifiedTaxCategory/normalize-space(cbc:ID)) satisfies exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = $category])">
-          <xsl:attribute name="id">ibr-tax-01</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[ibr-tax-01]-An Invoice that contains an Invoice line (ibg-25), a Document level allowance (ibg-20) or a Document level charge (ibg-21) with a TAX category code (ibt-151, ibt-095 or ibt-102) shall contain in the TAX breakdown (ibg-23) at least one identical TAX category code (ibt-118).</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
     <xsl:apply-templates mode="M11" select="*" />
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:InvoiceLine | cac:CreditNoteLine" mode="M11" priority="1017">
+<xsl:template match="cac:InvoiceLine | cac:CreditNoteLine" mode="M11" priority="1016">
     <svrl:fired-rule context="cac:InvoiceLine | cac:CreditNoteLine" />
 
 		<!--ASSERT -->
@@ -933,7 +918,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()]" mode="M11" priority="1016">
+<xsl:template match="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()]" mode="M11" priority="1015">
     <svrl:fired-rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()]" />
 
 		<!--ASSERT -->
@@ -984,7 +969,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]" mode="M11" priority="1015">
+<xsl:template match="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]" mode="M11" priority="1014">
     <svrl:fired-rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]" />
 
 		<!--ASSERT -->
@@ -1050,7 +1035,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod" mode="M11" priority="1014">
+<xsl:template match="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod" mode="M11" priority="1013">
     <svrl:fired-rule context="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod" />
 
 		<!--ASSERT -->
@@ -1086,7 +1071,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:InvoicePeriod" mode="M11" priority="1013">
+<xsl:template match="cac:InvoicePeriod" mode="M11" priority="1012">
     <svrl:fired-rule context="cac:InvoicePeriod" />
 
 		<!--ASSERT -->
@@ -1122,7 +1107,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="//cac:AdditionalItemProperty" mode="M11" priority="1012">
+<xsl:template match="//cac:AdditionalItemProperty" mode="M11" priority="1011">
     <svrl:fired-rule context="//cac:AdditionalItemProperty" />
 
 		<!--ASSERT -->
@@ -1143,7 +1128,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode | cac:CreditNoteLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode " mode="M11" priority="1011">
+<xsl:template match="cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode | cac:CreditNoteLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode " mode="M11" priority="1010">
     <svrl:fired-rule context="cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode | cac:CreditNoteLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode " />
 
 		<!--ASSERT -->
@@ -1164,7 +1149,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID | cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cbc:ID" mode="M11" priority="1010">
+<xsl:template match="cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID | cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cbc:ID" mode="M11" priority="1009">
     <svrl:fired-rule context="cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID | cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cbc:ID" />
 
 		<!--ASSERT -->
@@ -1185,7 +1170,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:PayeeParty" mode="M11" priority="1009">
+<xsl:template match="cac:PayeeParty" mode="M11" priority="1008">
     <svrl:fired-rule context="cac:PayeeParty" />
 
 		<!--ASSERT -->
@@ -1206,7 +1191,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:PaymentMeans" mode="M11" priority="1008">
+<xsl:template match="cac:PaymentMeans" mode="M11" priority="1007">
     <svrl:fired-rule context="cac:PaymentMeans" />
 
 		<!--ASSERT -->
@@ -1227,7 +1212,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:BillingReference" mode="M11" priority="1007">
+<xsl:template match="cac:BillingReference" mode="M11" priority="1006">
     <svrl:fired-rule context="cac:BillingReference" />
 
 		<!--ASSERT -->
@@ -1248,7 +1233,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AccountingSupplierParty" mode="M11" priority="1006">
+<xsl:template match="cac:AccountingSupplierParty" mode="M11" priority="1005">
     <svrl:fired-rule context="cac:AccountingSupplierParty" />
 
 		<!--ASSERT -->
@@ -1269,7 +1254,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AccountingSupplierParty/cac:Party/cbc:EndpointID" mode="M11" priority="1005">
+<xsl:template match="cac:AccountingSupplierParty/cac:Party/cbc:EndpointID" mode="M11" priority="1004">
     <svrl:fired-rule context="cac:AccountingSupplierParty/cac:Party/cbc:EndpointID" />
 
 		<!--ASSERT -->
@@ -1290,7 +1275,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress" mode="M11" priority="1004">
+<xsl:template match="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress" mode="M11" priority="1003">
     <svrl:fired-rule context="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress" />
 
 		<!--ASSERT -->
@@ -1311,7 +1296,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:TaxRepresentativeParty" mode="M11" priority="1003">
+<xsl:template match="cac:TaxRepresentativeParty" mode="M11" priority="1002">
     <svrl:fired-rule context="cac:TaxRepresentativeParty" />
 
 		<!--ASSERT -->
@@ -1362,7 +1347,7 @@
   </xsl:template>
 
 	<!--RULE -->
-<xsl:template match="cac:TaxRepresentativeParty/cac:PostalAddress" mode="M11" priority="1002">
+<xsl:template match="cac:TaxRepresentativeParty/cac:PostalAddress" mode="M11" priority="1001">
     <svrl:fired-rule context="cac:TaxRepresentativeParty/cac:PostalAddress" />
 
 		<!--ASSERT -->
@@ -1376,42 +1361,6 @@
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
           <svrl:text>[ibr-20]-The Seller tax representative postal address (ibg-12) shall contain a Tax representative country code (ibt-069), if the Seller (ibg-04) has a Seller tax representative party (ibg-11).</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-    <xsl:apply-templates mode="M11" select="*" />
-  </xsl:template>
-
-	<!--RULE -->
-<xsl:template match="cac:TaxTotal/cac:TaxSubtotal" mode="M11" priority="1001">
-    <svrl:fired-rule context="cac:TaxTotal/cac:TaxSubtotal" />
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="let $category := cac:TaxCategory/cbc:ID return let $rate := cac:TaxCategory/cbc:Percent return cbc:TaxableAmount = sum(//cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory[xs:decimal(cbc:Percent) = $rate and cbc:ID = $category]]/xs:decimal(cbc:LineExtensionAmount)) + sum(//cac:AllowanceCharge[cbc:ChargeIndicator=true()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) - sum(//cac:AllowanceCharge[cbc:ChargeIndicator=false()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) " />
-      <xsl:otherwise>
-        <svrl:failed-assert test="let $category := cac:TaxCategory/cbc:ID return let $rate := cac:TaxCategory/cbc:Percent return cbc:TaxableAmount = sum(//cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory[xs:decimal(cbc:Percent) = $rate and cbc:ID = $category]]/xs:decimal(cbc:LineExtensionAmount)) + sum(//cac:AllowanceCharge[cbc:ChargeIndicator=true()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount)) - sum(//cac:AllowanceCharge[cbc:ChargeIndicator=false()][(cac:TaxCategory/cbc:ID = $category and cac:TaxCategory/xs:decimal(cbc:Percent) = $rate)]/xs:decimal(cbc:Amount))">
-          <xsl:attribute name="id">ibr-tax-08</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[ibr-tax-08]-For each combination of tax category rate (ibt-119) and tax category code (ibt-118), the tax category taxable amount (ibt-116) in a tax breakdown (ibg-23) shall equal the sum of Invoice line net amounts (ibt-131) plus the sum of document level charge amounts (ibt-099) minus the sum of document level allowance amounts (ibt-092) combination of tax category code (ibt-151, ibt-102, ibt-095) and the tax rate (ibt-152, ibt-103, ibt-096) is the same.</svrl:text>
-        </svrl:failed-assert>
-      </xsl:otherwise>
-    </xsl:choose>
-
-		<!--ASSERT -->
-<xsl:choose>
-      <xsl:when test="(abs(xs:decimal(cbc:TaxAmount)) - 1 &lt;  round((abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(cbc:TaxAmount)) + 1 >  round((abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )" />
-      <xsl:otherwise>
-        <svrl:failed-assert test="(abs(xs:decimal(cbc:TaxAmount)) - 1 &lt; round((abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(cbc:TaxAmount)) + 1 > round((abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory/xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )">
-          <xsl:attribute name="id">ibr-tax-09</xsl:attribute>
-          <xsl:attribute name="flag">fatal</xsl:attribute>
-          <xsl:attribute name="location">
-            <xsl:apply-templates mode="schematron-select-full-path" select="." />
-          </xsl:attribute>
-          <svrl:text>[ibr-tax-09]-The tax category tax amount (ibt-117) in a tax breakdown (ibg-23) shall equal the tax category taxable amount (ibt-116) multiplied by the tax category rate (ibt-119).</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
