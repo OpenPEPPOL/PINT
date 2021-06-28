@@ -76,10 +76,10 @@
   <map key="build.plugin.13.artifactid" value="maven-deploy-plugin" />
   <map key="build.plugin.13.version" value="2.8.2" />
   <map key="build.plugin.13.key" value="org.apache.maven.plugins:maven-deploy-plugin" />
-  <map key="build.datetime.text" value="2020-07-16T15:21:31.920158" />
-  <map key="build.datetime.millis" value="1594905691920" />
-  <map key="build.datetime.date" value="2020-07-16" />
-  <map key="build.datetime.time" value="15:21:31.920158" />
+  <map key="build.datetime.text" value="2021-06-28T23:18:37.938751" />
+  <map key="build.datetime.millis" value="1624915117938" />
+  <map key="build.datetime.date" value="2021-06-28" />
+  <map key="build.datetime.time" value="23:18:37.938751" />
   <map key="build.datetime.timezone.id" value="Europe/Madrid" />
   <map key="build.datetime.timezone.offsethours" value="2" />
   <map key="build.datetime.timezone.offsetmins" value="120" />
@@ -124,7 +124,7 @@
   <map key="systemproperty.maven.multiModuleProjectDirectory" value="/Users/oriolbausa/Documents/Invinet/projectes/OpenPEPPOL/PINT" />
   <map key="systemproperty.os.arch" value="x86_64" />
   <map key="systemproperty.os.name" value="Mac OS X" />
-  <map key="systemproperty.os.version" value="10.15.5" />
+  <map key="systemproperty.os.version" value="10.15.7" />
   <map key="systemproperty.path.separator" value=":" />
   <map key="systemproperty.socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
   <map key="systemproperty.sun.arch.data.model" value="64" />
@@ -142,7 +142,7 @@
   <map key="systemproperty.user.name" value="oriolbausa" />
   <map key="systemproperty.user.timezone" value="Europe/Madrid" />
   <map key="envvar.JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home" />
-  <map key="envvar.JAVA_MAIN_CLASS_4267" value="org.codehaus.plexus.classworlds.launcher.Launcher" />
+  <map key="envvar.JAVA_MAIN_CLASS_40585" value="org.codehaus.plexus.classworlds.launcher.Launcher" />
   <map key="envvar.MAVEN_CMD_LINE_ARGS" value=" -f pom-xslt.xml process-resources" />
   <map key="envvar.MAVEN_PROJECTBASEDIR" value="/Users/oriolbausa/Documents/Invinet/projectes/OpenPEPPOL/PINT" />
 </mapping>

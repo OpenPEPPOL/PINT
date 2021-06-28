@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+            Copyright (C) 2020-2023 OpenPEPPOL AISBL
+
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+
+                    http://www.apache.org/licenses/LICENSE-2.0
+
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+
+-->
 
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" 
    xmlns:ccts="urn:un:unece:uncefact:documentation:2" 
@@ -11,10 +28,12 @@
 <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
 
 	<cbc:ID>12345678</cbc:ID>
-        <cbc:IssueDate>2020-07-01</cbc:IssueDate>
+    <cbc:IssueDate>2020-07-01</cbc:IssueDate>
+    <cbc:DueDate>2020-07-01</cbc:DueDate>
 
-        <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-        <cbc:DocumentCurrencyCode>NZD</cbc:DocumentCurrencyCode>
+        <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>    
+       <cbc:DocumentCurrencyCode>NZD</cbc:DocumentCurrencyCode>
+    
 
         <cac:AccountingSupplierParty>
             <cac:Party>
@@ -50,7 +69,7 @@
            <cac:TaxTotal>   
                <cbc:TaxAmount currencyID="NZD">0.00</cbc:TaxAmount>         
                <cac:TaxSubtotal>
-                    <cbc:TaxableAmount>0.00</cbc:TaxableAmount>
+                    <cbc:TaxableAmount currencyID="NZD">0.00</cbc:TaxableAmount>
                     <cac:TaxCategory>
                          <cbc:ID>E</cbc:ID>
                     </cac:TaxCategory>
