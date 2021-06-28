@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+            Copyright (C) 2020-2023 OpenPEPPOL AISBL
+
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+
+                    http://www.apache.org/licenses/LICENSE-2.0
+
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+
+-->
 <!-- 
 
             UBL syntax binding to the model  
             Created by Oriol Bausa. (2020) Midran Ltd.
             Timestamp: 2020-02-11 12:09:57 +0200
             
-     -->
+-->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cn="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:UBL="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" queryBinding="xslt2">
-  <title>PINT  model bound to UBL</title>
+  <title>PINT model bound to UBL</title>
   <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"/>
   <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -19,10 +36,10 @@
   <phase id="PINTmodel_phase">
     <active pattern="UBL-model"/>
   </phase>
-  <!-- phase id="codelist_phase">
+  <phase id="codelist_phase">
     <active pattern="Codesmodel"/>
-  </phase -->
-  <!-- Abstract CEN BII patterns -->
+  </phase>
+  <!-- Abstract patterns -->
   <!-- ========================= -->
   <include href="abstract/PINT-model.sch"/>
   <!-- Data Binding parameters -->
@@ -30,5 +47,5 @@
   <include href="UBL/PINT-UBL-model.sch"/>
   <!-- Code Lists Binding rules -->
   <!-- ======================== -->
-  <!-- include href="codelist/PINT-UBL-codes.sch"/ -->
+  <include href="codelist/PINT-UBL-codes.sch"/>
 </schema>

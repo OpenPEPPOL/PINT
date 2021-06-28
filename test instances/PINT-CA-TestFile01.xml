@@ -88,7 +88,7 @@
 		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 		<cbc:AllowanceChargeReasonCode>SAA</cbc:AllowanceChargeReasonCode>
 		<cbc:AllowanceChargeReason>PVRT tax 1.50 per day</cbc:AllowanceChargeReason>
-		<cbc:Amount currencyID="CAD">15.0</cbc:Amount> <!-- calculate the PVRT tax as a charge -->
+		<cbc:Amount currencyID="CAD">15.0</cbc:Amount> <!-- calculate the PVRT tax as a charge. We cannot use the Classified tax category as this tax is not calculated with a percentage -->
 		<cac:TaxCategory>
 			<cbc:ID>AA</cbc:ID>
 			<cbc:Percent>5</cbc:Percent>
