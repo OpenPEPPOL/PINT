@@ -2,7 +2,7 @@ name: Deploy PINT to Test-docs
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
