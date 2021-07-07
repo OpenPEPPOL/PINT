@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Japanese PEPPOL BIS Documentation</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="../../../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../../../css/structure.css"/>
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand" href="../../../../../">Japanese PEPPOL BIS Documentation</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+
+    <ol class="breadcrumb">
+        <li><a href="../../../../../">Home</a></li>
+        <li><a href="../../../../../syntax/ubl-invoice/tree/">Standard Commercial Invoice, message specification</a></li>
+        
+    
+    
+    
+    
+    <li><a href="../../../../../syntax/ubl-invoice/">ubl:Invoice</a></li>
+    
+    
+
+    <li><a href="../../../../../syntax/ubl-invoice/cac-InvoiceLine/">cac:InvoiceLine</a></li>
+    
+    
+
+    <li><a href="../../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Price/">cac:Price</a></li>
+    
+    
+
+    
+    
+    <li class="active">cac:AllowanceCharge</li>
+
+    </ol>
+
+    <div class="page-header">
+        <h1>cac:AllowanceCharge</h1>
+    </div>
+
+    
+
+    <dl class="dl-horizontal">
+        
+            <dt>Cardinality</dt>
+            <dd>0..1</dd>
+        
+
+        
+            <dt>Namespace</dt>
+            <dd><code>cac</code> urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2&quot;</dd>
+        
+
+        
+    
+
+
+        
+
+        
+            <dt>Child elements</dt>
+            <dd>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <th style="width: 5%">Card</th>
+            <th style="width: 35%">Name</th>
+            <th>Description</th>
+            </thead>
+            <tbody>
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>1..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Price/cac-AllowanceCharge/cbc-ChargeIndicator/">cbc:ChargeIndicator</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                
+                <em>Mandatory element. Value must be “false”</em>
+            </p>
+
+            
+            
+            <p>
+                Fixed value: <code>false</code>
+            </p>
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>1..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Price/cac-AllowanceCharge/cbc-Amount/">cbc:Amount</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>Item price discount</strong><br/>
+                <em>The total discount subtracted from the Item gross price to calculate the Item net price.</em>
+            </p>
+
+            
+            <p>
+                Example value: <code>100</code>
+            </p>
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Price/cac-AllowanceCharge/cbc-BaseAmount/">cbc:BaseAmount</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>Item gross price</strong><br/>
+                <em>The unit price, exclusive of VAT, before subtracting Item price discount, can not be negative</em>
+            </p>
+
+            
+            <p>
+                Example value: <code>123.45</code>
+            </p>
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+            </tbody>
+        </table>
+    </div>
+</dd>
+        
+
+        
+    
+
+
+        
+    </dl>
+
+</div>
+</div>
+
+<script src="../../../../../js/jquery.js"></script>
+<script src="../../../../../js/bootstrap.js"></script>
+
+
+</body>
+</html>

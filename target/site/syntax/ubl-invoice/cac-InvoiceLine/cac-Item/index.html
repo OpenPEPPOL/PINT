@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Japanese PEPPOL BIS Documentation</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="../../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../../css/structure.css"/>
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand" href="../../../../">Japanese PEPPOL BIS Documentation</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+
+    <ol class="breadcrumb">
+        <li><a href="../../../../">Home</a></li>
+        <li><a href="../../../../syntax/ubl-invoice/tree/">Standard Commercial Invoice, message specification</a></li>
+        
+    
+    
+    
+    <li><a href="../../../../syntax/ubl-invoice/">ubl:Invoice</a></li>
+    
+    
+
+    <li><a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/">cac:InvoiceLine</a></li>
+    
+    
+
+    
+    
+    <li class="active">cac:Item</li>
+
+    </ol>
+
+    <div class="page-header">
+        <h1>cac:Item</h1>
+    </div>
+
+    <p class="lead">A group of business terms providing information about the goods and services invoiced.</p>
+
+    <dl class="dl-horizontal">
+        
+            <dt>Cardinality</dt>
+            <dd>1..1</dd>
+        
+
+        
+            <dt>Namespace</dt>
+            <dd><code>cac</code> urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2&quot;</dd>
+        
+
+        
+    
+        
+
+        
+
+        
+
+        
+
+        
+            <dt>Business terms</dt>
+            <dd>
+                
+                    IBG-31
+                
+            </dd>
+        
+
+        
+
+    
+
+
+        
+
+        
+            <dt>Child elements</dt>
+            <dd>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <th style="width: 5%">Card</th>
+            <th style="width: 35%">Name</th>
+            <th>Description</th>
+            </thead>
+            <tbody>
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cbc-Description/">cbc:Description</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>Item description</strong><br/>
+                <em>A description for an item.The item description allows for describing the item and its features in more detail than the Item name.</em>
+            </p>
+
+            
+            <p>
+                Example value: <code>Long description of the item on the invoice line</code>
+            </p>
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>1..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cbc-Name/">cbc:Name</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>Item name</strong><br/>
+                <em>A name for an item.</em>
+            </p>
+
+            
+            <p>
+                Example value: <code>Item name</code>
+            </p>
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-BuyersItemIdentification/">cac:BuyersItemIdentification</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>BUYERS ITEM IDENTIFICATION</strong><br/>
+                
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-SellersItemIdentification/">cac:SellersItemIdentification</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>SELLERS ITEM IDENTIFICATION</strong><br/>
+                
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-StandardItemIdentification/">cac:StandardItemIdentification</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>STANDARD ITEM IDENTIFICATION</strong><br/>
+                
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-OriginCountry/">cac:OriginCountry</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>ORIGIN COUNTRY</strong><br/>
+                
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..n</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-CommodityClassification/">cac:CommodityClassification</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>COMMODITY CLASSIFICATION</strong><br/>
+                
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>1..1</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-ClassifiedTaxCategory/">cac:ClassifiedTaxCategory</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>LINE TAX INFORMATION</strong><br/>
+                <em>A group of business terms providing information about the TAX applicable for the goods and services
+                invoiced on the Invoice line.
+            </em>
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+                
+    <tr>
+        <td style="width: 5%;">
+            <span>0..n</span>
+        </td>
+        <td style="width: 35%;">
+            
+            <a href="../../../../syntax/ubl-invoice/cac-InvoiceLine/cac-Item/cac-AdditionalItemProperty/">cac:AdditionalItemProperty</a>
+            
+        </td>
+        
+        <td>
+            <p>
+                <strong>ITEM ATTRIBUTES</strong><br/>
+                <em>A group of business terms providing information about properties of the goods and services invoiced.</em>
+            </p>
+
+            
+            
+            
+        </td>
+    </tr>
+
+    
+
+    
+
+            
+            </tbody>
+        </table>
+    </div>
+</dd>
+        
+
+        
+    
+
+
+        
+    </dl>
+
+</div>
+</div>
+
+<script src="../../../../js/jquery.js"></script>
+<script src="../../../../js/bootstrap.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
+
+    <Name>Japanese PEPPOL BIS Documentation</Name>
+
+    <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS)</Documentation>
+    <Documentation path="compliance/">BIS compliance</Documentation>
+	<Documentation path="release-notes/">Release notes</Documentation>
+
+    <!-- Documentation -->
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>bis/</Path>
+        <Title>Japan Standard Commercial Invoice process (BIS)</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>compliance/</Path>
+        <Title>BIS compliance</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>release-notes/</Path>
+        <Title>Release notes</Title>
+    </Resource>
+
+    <!-- Syntax -->
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-invoice.xml</Path>
+        <Title>Standard Commercial Invoice, message specification</Title>
+    </Resource>
+<!--     <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-creditnote.xml</Path>
+        <Title>UBL Credit Note</Title>
+    </Resource> -->
+
+    <Resource>
+        <Identifier>ubl-pint</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Title>Rules for PEPPOL PINT</Title>
+    </Resource>
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
+    </Resource>
+	
+    <Resource>
+        <Identifier>ubl-japan</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
+        <Title>Japanese rules for Standard Commercial Invoice</Title>
+    </Resource>
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Title>Schematron for Japanese rules (UBL)</Title>
+        <Description>Schematron file containing Japanese rules according to ISO Schematron.</Description>
+        <Property key="download">Japan-UBL-validation-preprocessed.sch</Property>
+    </Resource>
+
+    <!--    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Title>Schematron for TC434 rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">CEN-EN16931-UBL.sch</Property>
+    </Resource>
+    -->
+    <Resource>
+        <Type>native:File</Type>
+        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Title>Stylesheet for UBL instances</Title>
+        <Property key="download">stylesheet-ubl.xslt</Property>
+    </Resource>
+    <!--
+    <Resource>
+        <Type>native:File</Type>
+        <Path>mapping/mapping-cii-ubl.xls</Path>
+        <Title>Excel mappling table cii to ubl</Title>
+        <Property key="download">mapping-cii-ubl.xls</Property>
+    </Resource> -->
+
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/icd.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/eas.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5305.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7143.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001-inv.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001-cn.xml</Path>
+    </Resource> 
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1153.xml</Path>
+    </Resource>
+<!--     <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL2005.xml</Path>
+    </Resource> -->
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4461.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5189.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7161.xml</Path>
+    </Resource>
+       <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
+    </Resource>   
+<!--     <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/SEPA.xml</Path>
+    </Resource>  -->
+<!--     <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/VATEX.xml</Path>
+    </Resource> -->
+
+</Project>

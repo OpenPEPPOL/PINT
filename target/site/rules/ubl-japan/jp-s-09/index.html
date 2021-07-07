@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Japanese PEPPOL BIS Documentation | Rules | jp-s-09</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../css/structure.css"/>
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand" href="../../../">Japanese PEPPOL BIS Documentation</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+
+    <ol class="breadcrumb">
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../rules/">Rules</a></li>
+        <li><a href="../../../rules/ubl-japan/">Japanese rules for Standard Commercial Invoice</a></li>
+        <li class="active">jp-s-09</li>
+    </ol>
+
+    <div class="page-header">
+        <h1>jp-s-09</h1>
+    </div>
+
+    <dl class="dl-horizontal">
+        <dt>Message</dt>
+        <dd><p class="lead">The Consumption Tax category tax amount (BT-117) in a Consumption Tax breakdown (BG-23) where Consumption Tax category code (BT-118) is &quot;Standard rated&quot; shall equal the Consumption Tax category taxable amount (BT-116) multiplied by the Consumption Tax category rate (BT-119).</p></dd>
+
+        <dt>Context</dt>
+        <dd><code>/*/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = &#39;S&#39;][cac:TaxScheme/normalize-space(upper-case(cbc:ID))=&#39;VAT&#39;]</code></dd>
+
+        <dt>Test</dt>
+        <dd><code>(abs(xs:decimal(../cbc:TaxAmount)) - 1 &lt;  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(../cbc:TaxAmount)) + 1 &gt;  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )</code></dd>
+
+        
+
+        
+
+        
+    </dl>
+
+</div>
+</div>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+
+</body>
+</html>
