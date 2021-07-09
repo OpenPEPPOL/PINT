@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Japanese PEPPOL BIS Documentation</Name>
+    <Name>PINT invoice document model</Name>
 
-    <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS)</Documentation>
-    <Documentation path="compliance/">BIS compliance</Documentation>
+    <Documentation path="bis/">PINT invoice document model</Documentation>
+    <Documentation path="compliance/">PINT compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
     <!-- Documentation -->
     <Resource>
         <Type>Doc-1</Type>
         <Path>bis/</Path>
-        <Title>Japan Standard Commercial Invoice process (BIS)</Title>
+        <Title>PINT invoice document model</Title>
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
         <Path>compliance/</Path>
-        <Title>BIS compliance</Title>
+        <Title>PINT compliance</Title>
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
@@ -55,14 +55,14 @@
         <Identifier>ubl-japan</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
-        <Title>Japanese rules for Standard Commercial Invoice</Title>
+        <Title>Sample rules for national requirements</Title>
     </Resource>
     
     <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
         <Title>Schematron for Japanese rules (UBL)</Title>
-        <Description>Schematron file containing Japanese rules according to ISO Schematron.</Description>
+        <Description>Schematron file containing Sample rules for national requirements</Description>
         <Property key="download">Japan-UBL-validation-preprocessed.sch</Property>
     </Resource>
 
