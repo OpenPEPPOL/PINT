@@ -131,7 +131,7 @@
     <assert
       test="((@mimeCode = 'application/pdf' or @mimeCode = 'image/png' or @mimeCode = 'image/jpeg' or @mimeCode = 'text/csv' or @mimeCode = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' or @mimeCode = 'application/vnd.oasis.opendocument.spreadsheet'))" 
       id="ibr-cl-24"
-      flag="fatal">[ibr-cl-24]-Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD list.</assert>
+      flag="fatal">[ibr-cl-24]-Mime code must be according to subset of IANA code list.</assert>
   </rule>
   
   <rule context="cbc:EndpointID[@schemeID]" flag="fatal">
