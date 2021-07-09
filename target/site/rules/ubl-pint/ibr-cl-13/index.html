@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Japanese PEPPOL BIS Documentation | Rules | ibr-cl-13</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../css/structure.css"/>
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand" href="../../../">Japanese PEPPOL BIS Documentation</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+
+    <ol class="breadcrumb">
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../rules/">Rules</a></li>
+        <li><a href="../../../rules/ubl-pint/">Rules for PEPPOL PINT</a></li>
+        <li class="active">ibr-cl-13</li>
+    </ol>
+
+    <div class="page-header">
+        <h1>ibr-cl-13</h1>
+    </div>
+
+    <dl class="dl-horizontal">
+        <dt>Message</dt>
+        <dd><p class="lead">Item classification identifier identification scheme MUST be coded using one of the UNTDID 7143 list.</p></dd>
+
+        <dt>Context</dt>
+        <dd><code>cac:CommodityClassification/cbc:ItemClassificationCode[@listID]</code></dd>
+
+        <dt>Test</dt>
+        <dd><code>((not(contains(normalize-space(@listID), &#39; &#39;)) and contains(&#39; AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH BI BJ BK BL BM BN BO BP BQ BR BS BT BU BV BW BX BY BZ CC CG CL CR CV DR DW EC EF EN FS GB GN GS HS IB IN IS IT IZ MA MF MN MP NB ON PD PL PO PV QS RC RN RU RY SA SG SK SN SRS SRT SRU SRV SRW SRX SRY SRZ SS SSA SSB SSC SSD SSE SSF SSG SSH SSI SSJ SSK SSL SSM SSN SSO SSP SSQ SSR SSS SST SSU SSV SSW SSX SSY SSZ ST STA STB STC STD STE STF STG STH STI STJ STK STL STM STN STO STP STQ STR STS STT STU STV STW STX STY STZ SUA SUB SUC SUD SUE SUF SUG SUH SUI SUJ SUK SUL SUM TG TSN TSO TSP TSQ TSR TSS TST TSU UA UP VN VP VS VX ZZZ &#39;, concat(&#39; &#39;, normalize-space(@listID), &#39; &#39;))))</code></dd>
+
+        
+
+        
+
+        
+    </dl>
+
+</div>
+</div>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+
+</body>
+</html>

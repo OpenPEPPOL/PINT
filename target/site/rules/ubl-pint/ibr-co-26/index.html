@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Japanese PEPPOL BIS Documentation | Rules | ibr-co-26</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../css/structure.css"/>
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <a class="navbar-brand" href="../../../">Japanese PEPPOL BIS Documentation</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+
+    <ol class="breadcrumb">
+        <li><a href="../../../">Home</a></li>
+        <li><a href="../../../rules/">Rules</a></li>
+        <li><a href="../../../rules/ubl-pint/">Rules for PEPPOL PINT</a></li>
+        <li class="active">ibr-co-26</li>
+    </ol>
+
+    <div class="page-header">
+        <h1>ibr-co-26</h1>
+    </div>
+
+    <dl class="dl-horizontal">
+        <dt>Message</dt>
+        <dd><p class="lead">In order for the buyer to automatically identify a supplier, the Seller identifier (ibt-029), the Seller legal registration identifier (ibt-030) and/or the Seller Tax identifier (ibt-031) shall be present.</p></dd>
+
+        <dt>Context</dt>
+        <dd><code>cac:AccountingSupplierParty</code></dd>
+
+        <dt>Test</dt>
+        <dd><code>exists(cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)</code></dd>
+
+        
+
+        
+
+        
+    </dl>
+
+</div>
+</div>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/bootstrap.js"></script>
+
+
+</body>
+</html>
