@@ -13,8 +13,9 @@
     <Document>
         <Term>ubl:Invoice</Term>
 
-		<xml:include file="part/aligned.xml"/>
-		<!-- <Include>part/aligned.xml</Include> -->
+		<!-- <xml:include file="part/aligned.xml"/> -->
+		
+		<Include>part/aligned.xml</Include>
 		
         <Element>
             <Term>cbc:CustomizationID</Term>
