@@ -13,8 +13,9 @@
     <Document>
         <Term>ubl:Invoice</Term>
 
-		<xml:include file="aligned.xml"/>
-
+		<xml:include file="part/aligned.xml"/>
+		<!-- <Include>part/aligned.xml</Include> -->
+		
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name languageID="en-GB">Specification identifier</Name>
