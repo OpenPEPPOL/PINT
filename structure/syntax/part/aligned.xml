@@ -5,10 +5,7 @@
         <Name>BUYER</Name>
         <Description>A group of business terms providing information about the Buyer.</Description>
         <Reference type="BUSINESS_TERM">IBG-07</Reference>
-        
-        <Element>
-            <Term>cac:Party</Term>
-            <Name>PARTY</Name>     
+
 			
             <Element>
                 <Term>cbc:TestpointID</Term>
@@ -21,5 +18,5 @@
                 <Value type="EXAMPLE">7300010000001</Value>
  
 			</Element>
-        </Element>
+
 	</Element>
