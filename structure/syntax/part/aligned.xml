@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+
+        <Term>cac:AccountingSupplierParty</Term>
+        <Name>SELLER</Name>
+        <Description>A group of business terms providing information about the Seller.</Description>
+        <Reference type="BUSINESS_TERM">IBG-04</Reference>
+        
+        <Element>
+            <Term>cac:Party</Term>
+            <Name>PARTY</Name>
+            
+            <Element>
+                <Term>cbc:TestpointID</Term>
+                <Name>Testing stuff</Name>
+                <Description>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">IBT-034</Reference>
+				<Section>Shared</Section>
+                
+                <Value type="EXAMPLE">7300010000001</Value>
+ 
+			</Element>
+        </Element>
+    </Element>
