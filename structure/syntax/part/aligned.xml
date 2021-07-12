@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
-        <Term>cac:AccountingCustomerParty</Term>
-        <Name>BUYER</Name>
-        <Description>A group of business terms providing information about the Buyer.</Description>
-        <Reference type="BUSINESS_TERM">IBG-07</Reference>
+        <Term>cac:AddedTestPoint class</Term>
+<!--         <Name>TestingPoint</Name>
+        <Description>An additional class used to test the functionality of the include function</Description>
+        <Reference type="BUSINESS_TERM">IBG-07</Reference> -->
 
-			
+		
             <Element>
                 <Term>cbc:TestpointID</Term>
                 <Name>Testing stuff</Name>
-                <Description>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Description>
+                <Description>Meaningless additional element for testing purposes.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-034</Reference>
 				<Section>Shared</Section>
