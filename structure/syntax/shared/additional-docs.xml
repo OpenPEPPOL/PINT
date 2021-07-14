@@ -38,9 +38,17 @@
                 <DataType>Binary object</DataType>
                 <Reference type="BUSINESS_TERM">IBT-125</Reference>
 				<Section>Shared</Section>
-                
-				<Include>aligned/IBT-008-tax_point_date_code.xml</Include>
-                
+
+                <Attribute>
+                    <Term>mimeCode</Term>
+                    <Name>Attached document Mime code</Name>
+                    <Description>(Aligned*) — The mime code of the attached document.</Description>
+					<Reference type="BUSINESS_TERM">IBT-125-1</Reference>
+                    <Reference type="CODE_LIST">MimeCode</Reference>
+                    <Value type="EXAMPLE">text/csv</Value>
+					<Section>Aligned</Section>
+                </Attribute>
+              
                 <Attribute>
                     <Term>filename</Term>
                     <Name>Attached document Filename</Name>
