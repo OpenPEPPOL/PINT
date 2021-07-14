@@ -170,10 +170,8 @@
 
             </Element>
             
-			<!-- <Include>../aligned/IBT-048-buyer_tax_identifier.xml</Include> -->
+			<Include>../aligned/IBT-048-buyer_tax_identifier.xml</Include>
 
-            </Element>
-            
             <Element>
                 <Term>cac:PartyLegalEntity</Term>
                 <Name>PARTY LEGAL ENTITY</Name>
