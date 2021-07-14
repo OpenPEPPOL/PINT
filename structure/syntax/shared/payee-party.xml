@@ -15,7 +15,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Payee identifier</Name>
-                <Description>An identifiers for the payee.</Description>
+                <Description>(Shared) — An identifiers for the payee.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-60</Reference>
 				<Section>Shared</Section>
@@ -23,7 +23,7 @@
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Payee or bank assigned creditor identifier identification scheme identifier</Name>
-                    <Description>Scheme identifer</Description>
+                    <Description>(Shared) — Scheme identifer</Description>
 					<Reference type="BUSINESS_TERM">IBT-060-1</Reference>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">0088</Value>
@@ -42,7 +42,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Payee identifier or bank assigned creditor identifier</Name>
-                <Description>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
+                <Description>(Shared) — This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-060</Reference>
 				<Section>Shared</Section>
@@ -50,7 +50,7 @@
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Payee or bank assigned creditor identifier identification scheme identifier</Name>
-                    <Description>The identification scheme identifier of the payee identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
+                    <Description>(Shared) — The identification scheme identifier of the payee identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
 					<Reference type="BUSINESS_TERM">BT-060-1</Reference>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Reference type="CODE_LIST">SEPA</Reference>
@@ -70,7 +70,7 @@
             <Element>
                 <Term>cbc:Name</Term>
                 <Name>Payee name</Name>
-                <Description>The name of the Payee.</Description>
+                <Description>(Shared) — The name of the Payee.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-059</Reference>
 				<Section>Shared</Section>
@@ -85,7 +85,7 @@
             <Element>
                 <Term>cbc:CompanyID</Term>
                 <Name>Payee legal registration identifier</Name>
-                <Description>An identifier issued by an official registrar that identifies the Payee as a legal entity or person.
+                <Description>(Shared) — An identifier issued by an official registrar that identifies the Payee as a legal entity or person.
                 </Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-61</Reference>
@@ -95,7 +95,7 @@
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Payee legal registration identifier identification scheme identifier</Name>
-                    <Description>The identification scheme identifier of the Payee legal registration identifier.</Description>
+                    <Description>(Shared) — The identification scheme identifier of the Payee legal registration identifier.</Description>
 					<Reference type="BUSINESS_TERM">IBT-61-1</Reference>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">0002</Value>
