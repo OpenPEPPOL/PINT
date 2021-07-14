@@ -392,19 +392,21 @@
 				<Reference type="CODE_LIST">UNCL4461</Reference>
 				<Section>Aligned</Section>
 				<Value type="EXAMPLE">30</Value>
-			</Element>				
+			
 
-			<Attribute usage="Optional">
-					<Term>name</Term>
-					<Name>Payment means text</Name>
-					<Description>(Shared) — The means, expressed as text, for how a payment is expected to be or has been settled.
-					</Description>
-					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">IBT-082</Reference>
-					<Value type="EXAMPLE">Credit transfer</Value>
-					<Section>Shared</Section>
-			</Attribute>
-        
+				<Attribute usage="Optional">
+						<Term>name</Term>
+						<Name>Payment means text</Name>
+						<Description>(Shared) — The means, expressed as text, for how a payment is expected to be or has been settled.
+						</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">IBT-082</Reference>
+						<Value type="EXAMPLE">Credit transfer</Value>
+						<Section>Shared</Section>
+				</Attribute>
+ 
+			</Element>	
+			
 			<Element cardinality="0..1">
 				<Term>cbc:PaymentID</Term>
 				<Name>Remittance information</Name>
