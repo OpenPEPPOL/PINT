@@ -372,15 +372,7 @@
         <Description>(Shared) — A group of business terms providing information about the payment.</Description>
         <Reference type="BUSINESS_TERM">IBG-16</Reference>
         
-			<Element cardinality="0..1">
-				<Term>cbc:ID</Term>
-				<Name>Payment Instructions ID</Name>
-				<Description>(Aligned) — An identifier for the payment instructions.</Description>
-				<DataType>Identifier</DataType>
-				<Reference type="BUSINESS_TERM">IBT-178</Reference>
-				<Value type="EXAMPLE">2</Value>
-				<Section>Aligned</Section>
-			</Element>
+			<Include>aligned/IBT-178-payment_instructions_id.xml.xml</Include>
 
 			<Element>
 				<Term>cbc:PaymentMeansCode</Term>
