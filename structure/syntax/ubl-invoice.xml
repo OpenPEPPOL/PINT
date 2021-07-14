@@ -156,7 +156,7 @@
         <Element cardinality="0..1">
             <Term>cbc:AccountingCost</Term>
             <Name>Buyer accounting reference</Name>
-            <Description>A textual value that specifies where to book the relevant data into the Buyer's financial accounts.
+            <Description>(Shared) — A textual value that specifies where to book the relevant data into the Buyer's financial accounts.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-019</Reference>
@@ -167,7 +167,7 @@
         <Element cardinality="0..1">
             <Term>cbc:BuyerReference</Term>
             <Name>Buyer reference</Name>
-            <Description>An identifier assigned by the Buyer used for internal routing purposes.</Description>
+            <Description>(Shared) — An identifier assigned by the Buyer used for internal routing purposes.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-010</Reference>
             <Value type="EXAMPLE">abs1234</Value>
@@ -177,13 +177,13 @@
         <Element cardinality="0..1">
             <Term>cac:InvoicePeriod</Term>
             <Name>DELIVERY OR INVOICE PERIOD</Name>
-            <Description>A group of business terms providing information on the invoice period.</Description>
+            <Description>(Shared) — A group of business terms providing information on the invoice period.</Description>
             <Reference type="BUSINESS_TERM">BG-14</Reference>
 
             <Element cardinality="0..1">
                 <Term>cbc:StartDate</Term>
                 <Name>Invoicing period start date</Name>
-                <Description>The date when the Invoice period starts.</Description>
+                <Description>(Shared) — The date when the Invoice period starts.</Description>
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">IBT-073</Reference>
                 <Value type="EXAMPLE">2017-10-01</Value>
@@ -193,7 +193,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:EndDate</Term>
                 <Name>Invoicing period end date</Name>
-                <Description>The date when the Invoice period ends.</Description>			
+                <Description>(Shared) — The date when the Invoice period ends.</Description>			
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">IBT-074</Reference>
                 <Value type="EXAMPLE">2017-10-31</Value>
@@ -203,7 +203,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:DescriptionCode</Term>
                 <Name>TAX point date code</Name>
-                <Description>The code of the date when the TAX becomes accountable for the Seller and for the Buyer.</Description>
+                <Description>(Aligned) — The code of the date when the TAX becomes accountable for the Seller and for the Buyer.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">IBT-008</Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>
@@ -219,7 +219,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Purchase order reference</Name>
-                <Description>An identifier of a referenced purchase order, issued by the Buyer.</Description>
+                <Description>(Shared) — An identifier of a referenced purchase order, issued by the Buyer.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-013</Reference>
                 <Value type="EXAMPLE">98776</Value>
@@ -229,7 +229,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:SalesOrderID</Term>
                 <Name>Sales order reference</Name>
-                <Description>An identifier of a referenced sales order, issued by the Seller.</Description>
+                <Description>(Shared) — An identifier of a referenced sales order, issued by the Seller.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-014</Reference>
                 <Value type="EXAMPLE">112233</Value>
@@ -240,7 +240,7 @@
         <Element cardinality="0..n">
             <Term>cac:BillingReference</Term>
             <Name>PRECEDING INVOICE REFERENCE</Name>
-            <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
+            <Description>(Shared) — A group of business terms providing information on one or more preceding Invoices.</Description>
             <Reference type="BUSINESS_TERM">IBG-03</Reference>
 
             <Element>
@@ -250,7 +250,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Preceding Invoice number</Name>
-                    <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
+                    <Description>(Shared) — The identification of an Invoice that was previously sent by the Seller.</Description>
                     <DataType>Document Reference</DataType>
                     <Reference type="BUSINESS_TERM">IBT-025</Reference>
                     <Value type="EXAMPLE">inv123</Value>
@@ -259,7 +259,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:IssueDate</Term>
                     <Name>Preceding Invoice issue date</Name>
-                    <Description>The date when the Preceding Invoice was issued.</Description>
+                    <Description>(Shared) — The date when the Preceding Invoice was issued.</Description>
                     <DataType>Date</DataType>
                     <Reference type="BUSINESS_TERM">IBT-026</Reference>
                     <Value type="EXAMPLE">2017-09-15</Value>
@@ -275,7 +275,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Despatch advice reference</Name>
-                <Description>An identifier of a referenced despatch advice.</Description>
+                <Description>(Aligned) — An identifier of a referenced despatch advice.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-016</Reference>
                 <Value type="EXAMPLE">desp98</Value>
@@ -290,7 +290,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Receiving advice reference</Name>
-                <Description>An identifier of a referenced receiving advice.</Description>
+                <Description>(Shared) — An identifier of a referenced receiving advice.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-015</Reference>
                 <Value type="EXAMPLE">rec98</Value>
@@ -305,7 +305,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Tender or lot reference</Name>
-                <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+                <Description>(Shared) — The identification of the call for tender or lot the invoice relates to.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-017</Reference>
                 <Value type="EXAMPLE">PPID-123</Value>
@@ -320,7 +320,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Contract reference</Name>
-                <Description>The identification of a contract.</Description>
+                <Description>(Shared) — The identification of a contract.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-012</Reference>
                 <Value type="EXAMPLE">123Contractref</Value>
@@ -331,13 +331,13 @@
         <Element> 
         <Term>cac:AdditionalDocumentReference</Term>
         <Name>Invoice object identifier</Name>
-        <Description>A group of elements mappint the Invoice object identifier as a document reference qualified as document type 130.</Description>
+        <Description>(Shared) — A group of elements mappint the Invoice object identifier as a document reference qualified as document type 130.</Description>
         <Reference type="BUSINESS_TERM">IBT-018</Reference>
 		
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Invoiced object identifier</Name>
-				<Description>An identifier for an object on which the invoice is based, given by the Seller.</Description>
+				<Description>(Shared) — An identifier for an object on which the invoice is based, given by the Seller.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-018</Reference>
 				<Section>Shared</Section>
@@ -345,7 +345,7 @@
 				<Attribute usage="Optional">
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
-					<Description>The identification scheme identifier of the Invoiced object identifier.</Description>
+					<Description>(Shared) — The identification scheme identifier of the Invoiced object identifier.</Description>
 					<Reference type="BUSINESS_TERM">IBT-018-1</Reference>
 					<Reference type="CODE_LIST">UNCL1153</Reference>
 					<Value type="EXAMPLE">AUN</Value>
@@ -356,7 +356,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
-				<Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+				<Description>(Shared) — Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">IBT-018-2</Reference>
 				<Value type="DEFAULT">130</Value>
@@ -373,7 +373,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Project reference</Name>
-                <Description>The identification of the project the invoice refers to.</Description>
+                <Description>(Shared) — The identification of the project the invoice refers to.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-011</Reference>
                 <Value type="EXAMPLE">PID33</Value>
@@ -394,13 +394,13 @@
         <Element cardinality="0..n">
         <Term>cac:PaymentMeans</Term>
         <Name>PAYMENT INSTRUCTIONS</Name>
-        <Description>A group of business terms providing information about the payment.</Description>
+        <Description>(Shared) — A group of business terms providing information about the payment.</Description>
         <Reference type="BUSINESS_TERM">IBG-16</Reference>
         
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
 				<Name>Payment Instructions ID</Name>
-				<Description>An identifier for the payment instructions.</Description>
+				<Description>(Aligned) — An identifier for the payment instructions.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-178</Reference>
 				<Value type="EXAMPLE">2</Value>
@@ -410,7 +410,7 @@
 			<Element>
 				<Term>cbc:PaymentMeansCode</Term>
 				<Name>Payment means type code</Name>
-				<Description>The means, expressed as code, for how a payment is expected to be or has been settled.
+				<Description>(Aligned) — The means, expressed as code, for how a payment is expected to be or has been settled.
 				</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">IBT-081</Reference>
@@ -420,7 +420,7 @@
 				<Attribute usage="Optional">
 					<Term>name</Term>
 					<Name>Payment means text</Name>
-					<Description>The means, expressed as text, for how a payment is expected to be or has been settled.
+					<Description>(Shared) — The means, expressed as text, for how a payment is expected to be or has been settled.
 					</Description>
 					<DataType>Text</DataType>
 					<Reference type="BUSINESS_TERM">IBT-082</Reference>
@@ -435,7 +435,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:PaymentID</Term>
 				<Name>Remittance information</Name>
-				<Description>A textual value used for payment routing or to establish a link between the payment and the Invoice.</Description>
+				<Description>(Shared) — A textual value used for payment routing or to establish a link between the payment and the Invoice.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">IBT-083</Reference>
 				<Value type="EXAMPLE">432948234234234</Value>
@@ -458,7 +458,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:PaymentMeansID</Term>
 				<Name>Terms payment instructions ID</Name>
-				<Description>The payment instructions that apply to these payment terms.</Description>
+				<Description>(Aligned) — The payment instructions that apply to these payment terms.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-187</Reference>
 				<Value type="EXAMPLE">1</Value>
@@ -468,7 +468,7 @@
             <Element  cardinality="0..1">
                 <Term>cbc:Note</Term>
                 <Name>Payment terms</Name>
-                <Description>A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (IBT-115) is positive, either the Payment due date (IBT-9) or the Payment terms (IBT-20) shall be present.</Description>
+                <Description>(Shared) — A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (IBT-115) is positive, either the Payment due date (IBT-9) or the Payment terms (IBT-20) shall be present.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-020</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
@@ -478,7 +478,7 @@
 			<Element  cardinality="0..1">
 					<Term>cbc:Amount</Term>
 					<Name>Terms amount</Name>
-					<Description>The payment amount that these terms apply to.</Description>
+					<Description>(Aligned) — The payment amount that these terms apply to.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">IBT-176</Reference>
 					<Value type="EXAMPLE">100.00</Value>
@@ -488,7 +488,7 @@
 			<Element  cardinality="0..1">
 					<Term>cbc:InstallmentDueDate</Term>
 					<Name>Terms installment due date</Name>
-					<Description>The date before end of which the terms amount shall be settled.</Description>
+					<Description>(Aligned) — The date before end of which the terms amount shall be settled.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">IBT-177</Reference>
 					<Value type="EXAMPLE">2021-01-01</Value>
@@ -504,7 +504,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
 				<Name>Payment identifier</Name>
-				<Description>An identifier that references the payment, such as bank transfer identifier.</Description>
+				<Description>(Aligned) — An identifier that references the payment, such as bank transfer identifier.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-179</Reference>
 				<Value type="EXAMPLE">1</Value>
@@ -514,7 +514,7 @@
             <Element  cardinality="0..1">
                 <Term>cbc:PaidAmount</Term>
                 <Name>Paid amount</Name>
-                <Description>The amount of the payment in the invoice currency.</Description>
+                <Description>(Aligned) — The amount of the payment in the invoice currency.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-180</Reference>
                 <Value type="EXAMPLE">100.00</Value>
@@ -524,7 +524,7 @@
 			<Element  cardinality="0..1">
 					<Term>cbc:ReceivedDate</Term>
 					<Name>The date when the paid amount is debited to the invoice.</Name>
-					<Description>The date when the prepaid amount was received by the seller.</Description>
+					<Description>(Aligned) — The date when the prepaid amount was received by the seller.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">IBT-181</Reference>
 					<Value type="EXAMPLE">2021-01-01</Value>
@@ -534,7 +534,7 @@
 			<Element  cardinality="0..1">
 					<Term>cbc:InstructionID</Term>
 					<Name>Payment type</Name>
-					<Description>The date before end of which the terms amount shall be settled.</Description>
+					<Description>(Aligned) — The date before end of which the terms amount shall be settled.</Description>
 					<DataType>Code</DataType>
 					<Reference type="BUSINESS_TERM">IBT-182</Reference>
 					<Value type="EXAMPLE">None</Value>
@@ -551,13 +551,13 @@
         <Element cardinality="1..n">
             <Term>cac:InvoiceLine</Term>
             <Name>INVOICE LINE</Name>
-            <Description>A group of business terms providing information on individual Invoice lines.</Description>
+            <Description>(Shared) — A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">IBG-25</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Invoice line identifier</Name>
-                <Description>A unique identifier for the individual line within the Invoice.</Description>
+                <Description>(Shared) — A unique identifier for the individual line within the Invoice.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-126</Reference>
                 <Value type="EXAMPLE">12</Value>
@@ -567,7 +567,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:Note</Term>
                 <Name>Invoice line note</Name>
-                <Description>A textual note that gives unstructured information that is relevant to the Invoice line.</Description>
+                <Description>(Shared) — A textual note that gives unstructured information that is relevant to the Invoice line.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-127</Reference>
                 <Value type="EXAMPLE">New article number 12345</Value>
@@ -577,7 +577,7 @@
             <Element>
                 <Term>cbc:InvoicedQuantity</Term>
                 <Name>Invoiced quantity</Name>
-                <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
+                <Description>(Shared) — The quantity of items (goods or services) that is charged in the Invoice line.</Description>
                 <DataType>Quantity</DataType>
                 <Reference type="BUSINESS_TERM">IBT-129</Reference>
                 <Value type="EXAMPLE">100</Value>
@@ -586,7 +586,7 @@
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Invoiced quantity unit of measure</Name>
-                    <Description>The unit of measure that applies to the invoiced quantity.</Description>
+                    <Description>(Shared) — The unit of measure that applies to the invoiced quantity.</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-130</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
@@ -597,7 +597,7 @@
             <Element>
                 <Term>cbc:LineExtensionAmount</Term>
                 <Name>Invoice line net amount</Name>
-                <Description>The total amount of the Invoice line.</Description>
+                <Description>(Shared) — The total amount of the Invoice line.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-131</Reference>
                 <Value type="EXAMPLE">2145.00</Value>
@@ -605,7 +605,7 @@
                 
                 <Attribute>
                     <Term>currencyID</Term>
-                    <Description>Mandatory attribute. Use IBT-005</Description>
+                    <Description>(Shared) — Mandatory attribute. Use IBT-005</Description>
 					<Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -615,7 +615,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:AccountingCost</Term>
                 <Name>Invoice line Buyer accounting reference</Name>
-                <Description>A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
+                <Description>(Shared) — A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-133</Reference>
                 <Value type="EXAMPLE">1234:56789</Value>
@@ -631,7 +631,7 @@
                 <Element>
                     <Term>cbc:LineID</Term>
                     <Name>Referenced purchase order line reference</Name>
-                    <Description>An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
+                    <Description>(Shared) — An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-132</Reference>
                     <Value type="EXAMPLE">3</Value>
@@ -646,7 +646,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Invoice line object identifier</Name>
-                    <Description>An identifier for an object on which the invoice line is based, given by the Seller.</Description>
+                    <Description>(Shared) — An identifier for an object on which the invoice line is based, given by the Seller.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-128</Reference>
                     <Value type="EXAMPLE">AB12345</Value>
@@ -655,7 +655,7 @@
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Invoice line object identifier identification scheme identifier</Name>
-                        <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
+                        <Description>(Shared) — The identification scheme identifier of the Invoice line object identifier.</Description>
                         <Reference type="CODE_LIST">UNCL1153</Reference>
 						<Reference type="BUSINESS_TERM">IBT-128-1</Reference>
 						<Value type="EXAMPLE">ABZ</Value>
@@ -666,7 +666,7 @@
                 <Element>
                     <Term>cbc:DocumentTypeCode</Term>
                     <Name>Document type code</Name>
-                    <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+                    <Description>(Shared) — Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-128</Reference>
                     <Value type="DEFAULT">130</Value>
