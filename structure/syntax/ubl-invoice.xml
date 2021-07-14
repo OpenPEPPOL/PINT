@@ -13,9 +13,9 @@
     <Document>
         <Term>ubl:Invoice</Term>
 
-		<!-- <xml:include file="part/aligned.xml"/> -->
+		<!-- <xml:include file="shared/aligned.xml"/> -->
 		
-		<Include>part/aligned.xml</Include>
+		<Include>shared/aligned.xml</Include>
 		
         <Element>
             <Term>cbc:CustomizationID</Term>
@@ -360,7 +360,7 @@
 			
         </Element>   
 
-        <Include>part/additional-docs.xml</Include>
+        <Include>shared/additional-docs.xml</Include>
       
         <Element cardinality="0..1">
             <Term>cac:ProjectReference</Term>
@@ -377,15 +377,15 @@
             </Element>
         </Element>
 
-        <Include>part/supplier-party.xml</Include>
+        <Include>shared/supplier-party.xml</Include>
         
-        <Include>part/customer-party.xml</Include>
+        <Include>shared/customer-party.xml</Include>
         
-        <Include>part/payee-party.xml</Include>
+        <Include>shared/payee-party.xml</Include>
 
-        <Include>part/taxrep-party.xml</Include>
+        <Include>shared/taxrep-party.xml</Include>
 
-        <Include>part/delivery.xml</Include>
+        <Include>shared/delivery.xml</Include>
 
         <Element cardinality="0..n">
         <Term>cac:PaymentMeans</Term>
@@ -438,11 +438,11 @@
 				<Section>Shared</Section>
 			</Element>
 
-            <Include>part/card-payment.xml</Include>
+            <Include>shared/card-payment.xml</Include>
 
-            <Include>part/credit-transfer.xml</Include>
+            <Include>shared/credit-transfer.xml</Include>
 
-            <Include>part/payment-mandate.xml</Include>
+            <Include>shared/payment-mandate.xml</Include>
 
         </Element>
 
@@ -538,11 +538,11 @@
 			</Element>
 		</Element>
         
-        <Include>part/allowance-charge.xml</Include>
+        <Include>shared/allowance-charge.xml</Include>
         
-        <Include>part/tax-total.xml</Include>
+        <Include>shared/tax-total.xml</Include>
      
-        <Include>part/monetary-totals.xml</Include>
+        <Include>shared/monetary-totals.xml</Include>
    
         <Element cardinality="1..n">
             <Term>cac:InvoiceLine</Term>
@@ -618,7 +618,7 @@
 				<Section>Shared</Section>
             </Element>
             
-            <Include>part/line-period.xml</Include>
+            <Include>shared/line-period.xml</Include>
 
             <Element cardinality="0..1">
                 <Term>cac:OrderLineReference</Term>
@@ -671,11 +671,11 @@
  
 			</Element>
             
-            <Include>part/line-allowance-charge.xml</Include>
+            <Include>shared/line-allowance-charge.xml</Include>
 
-            <Include>part/item.xml</Include>
+            <Include>shared/item.xml</Include>
               
-            <Include>part/price.xml</Include>
+            <Include>shared/price.xml</Include>
           
         </Element>
     </Document>
