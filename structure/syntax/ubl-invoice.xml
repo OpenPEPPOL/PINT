@@ -362,7 +362,7 @@
         
         <Include>shared/payee-party.xml</Include>
 
-        <Include>shared/taxrep-party.xml</Include>
+        <Include>aligned/IBG-11-taxrep-party.xml</Include>
 
         <Include>shared/delivery.xml</Include>
 

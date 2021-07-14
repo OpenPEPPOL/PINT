@@ -29,7 +29,7 @@
                 party. Sufficient components of the address are to be filled to comply with legal requirements.
             </Description>
             <Reference type="BUSINESS_TERM">BG-12</Reference>
- 			<Section>Shared</Section>           
+ 			<Section>Aligned</Section>           
             
             <Element cardinality="0..1">
                 <Term>cbc:StreetName</Term>
@@ -38,7 +38,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-064</Reference>
                 <Value type="EXAMPLE">Lille gatan 545</Value>
- 			<Section>Shared</Section>           
+ 			<Section>Aligned</Section>           
             </Element>
             
             <Element cardinality="0..1">
@@ -50,7 +50,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-065</Reference>
                 <Value type="EXAMPLE">Po Box 987</Value>
-				<Section>Shared</Section>
+				<Section>Aligned</Section>
 			</Element>
             
             <Element cardinality="0..1">
@@ -61,7 +61,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-066</Reference>
                 <Value type="EXAMPLE">Göteborg</Value>
-				<Section>Shared</Section>
+				<Section>Aligned</Section>
             </Element>
             
             <Element cardinality="0..1">
@@ -72,7 +72,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-067</Reference>
                 <Value type="EXAMPLE">12345</Value>
-				<Section>Shared</Section>
+				<Section>Aligned</Section>
             </Element>
             
             <Element cardinality="0..1">
@@ -82,7 +82,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-068</Reference>
                 <Value type="EXAMPLE">Region Vest</Value>
-				<Section>Shared</Section>
+				<Section>Aligned</Section>
             </Element>
             
             
@@ -99,7 +99,7 @@
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-164</Reference>
                     <Value type="EXAMPLE">A87</Value>
-					<Section>Shared</Section>
+					<Section>Aligned</Section>
               </Element>
             </Element>
             
@@ -115,7 +115,7 @@
                     <Reference type="BUSINESS_TERM">IBT-069</Reference>
                     <Reference type="CODE_LIST">ISO3166</Reference>
                     <Value type="EXAMPLE">SE</Value>
-					<Section>Shared</Section>
+					<Section>Aligned</Section>
                 </Element>
             </Element>
         </Element>
