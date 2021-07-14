@@ -39,15 +39,7 @@
                 <Reference type="BUSINESS_TERM">IBT-125</Reference>
 				<Section>Shared</Section>
 
-                <Attribute>
-                    <Term>mimeCode</Term>
-                    <Name>Attached document Mime code</Name>
-                    <Description>(Aligned*) — The mime code of the attached document.</Description>
-					<Reference type="BUSINESS_TERM">IBT-125-1</Reference>
-                    <Reference type="CODE_LIST">MimeCode</Reference>
-                    <Value type="EXAMPLE">text/csv</Value>
-					<Section>Aligned</Section>
-                </Attribute>
+				<Include>../aligned/IBT-125-1-mime_code.xml</Include>
               
                 <Attribute>
                     <Term>filename</Term>
