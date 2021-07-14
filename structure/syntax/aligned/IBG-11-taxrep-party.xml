@@ -3,7 +3,7 @@
  
         <Term>cac:TaxRepresentativeParty</Term>
         <Name>SELLER TAX REPRESENTATIVE PARTY</Name>
-        <Description>A group of business terms providing information about the Seller's tax representative.
+        <Description>(Aligned) — A group of business terms providing information about the Seller's tax representative.
         </Description>
         <Reference type="BUSINESS_TERM">IBG-11</Reference>
         
@@ -14,7 +14,7 @@
             <Element>
                 <Term>cbc:Name</Term>
                 <Name>Seller tax representative name</Name>
-                <Description>The full name of the Seller's tax representative party.</Description>
+                <Description>(Aligned) — The full name of the Seller's tax representative party.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-062</Reference>
                 <Value type="EXAMPLE">Tax Representative Name AS</Value>
@@ -25,7 +25,7 @@
         <Element>
             <Term>cac:PostalAddress</Term>
             <Name>SELLER TAX REPRESENTATIVE POSTAL ADDRESS</Name>
-            <Description>A group of business terms providing information about the postal address for the tax representative
+            <Description>(Aligned) — A group of business terms providing information about the postal address for the tax representative
                 party. Sufficient components of the address are to be filled to comply with legal requirements.
             </Description>
             <Reference type="BUSINESS_TERM">BG-12</Reference>
@@ -34,7 +34,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:StreetName</Term>
                 <Name>Tax representative address line 1</Name>
-                <Description>The main address line in an address.</Description>
+                <Description>(Aligned) — The main address line in an address.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-064</Reference>
                 <Value type="EXAMPLE">Lille gatan 545</Value>
@@ -44,7 +44,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:AdditionalStreetName</Term>
                 <Name>Tax representative address line 2</Name>
-                <Description>An additional address line in an address that can be used to give further details supplementing the
+                <Description>(Aligned) — An additional address line in an address that can be used to give further details supplementing the
                     main line.
                 </Description>
                 <DataType>Text</DataType>
@@ -56,7 +56,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:CityName</Term>
                 <Name>Tax representative city</Name>
-                <Description>The common name of the city, town or village, where the tax representative address is located.
+                <Description>(Aligned) — The common name of the city, town or village, where the tax representative address is located.
                 </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-066</Reference>
@@ -67,7 +67,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:PostalZone</Term>
                 <Name>Tax representative post code</Name>
-                <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                <Description>(Aligned) — The identifier for an addressable group of properties according to the relevant postal service.
                 </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-067</Reference>
@@ -78,7 +78,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:CountrySubentity</Term>
                 <Name>Tax representative country subdivision</Name>
-                <Description>The subdivision of a country.</Description>
+                <Description>(Aligned) — The subdivision of a country.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-068</Reference>
                 <Value type="EXAMPLE">Region Vest</Value>
@@ -93,7 +93,7 @@
                 <Element>
                     <Term>cbc:Line</Term>
                     <Name>Tax representative address line 3</Name>
-                    <Description>An additional address line in an address that can be used to give further details supplementing the
+                    <Description>(Aligned) — An additional address line in an address that can be used to give further details supplementing the
                         main line.
                     </Description>
                     <DataType>Text</DataType>
@@ -110,7 +110,7 @@
                 <Element>
                     <Term>cbc:IdentificationCode</Term>
                     <Name>Tax representative country code</Name>
-                    <Description>A code that identifies the country.</Description>
+                    <Description>(Aligned) — A code that identifies the country.</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-069</Reference>
                     <Reference type="CODE_LIST">ISO3166</Reference>
@@ -127,7 +127,7 @@
             <Element>
                 <Term>cbc:CompanyID</Term>
                 <Name>Seller tax representative TAX identifier</Name>
-                <Description>The TAX identifier of the Seller's tax representative party.</Description>
+                <Description>(Aligned) — The TAX identifier of the Seller's tax representative party.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-063</Reference>
 				<Section>Aligned</Section>
@@ -140,7 +140,7 @@
                 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Description>Mandatory element. As example “TAX”</Description>
+                    <Description>(Aligned) — Mandatory element. As example “TAX”</Description>
 					<Reference type="BUSINESS_TERM">IBT-063-1</Reference>
                     <Value type="EXAMPLE">VAT</Value>
                 </Element>
