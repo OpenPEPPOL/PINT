@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Attribute cardinality="0..n" xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
 		<Term>mimeCode</Term>
 		<Name>Attached document Mime code</Name>
@@ -9,4 +9,4 @@
 		<Value type="EXAMPLE">text/csv</Value>
 		<Section>Aligned</Section>
 
-	</Attribute>
+	</Element>
