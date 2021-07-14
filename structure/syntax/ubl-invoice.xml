@@ -21,7 +21,7 @@
             <Term>cbc:CustomizationID</Term>
             <Name languageID="en-GB">Specification identifier</Name>
             <Name languageID="ja-JP">Specification identifier</Name>
-            <Description languageID="en-GB">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+            <Description languageID="en-GB">(Shared) — An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <Description languageID="ja-JP">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-024</Reference>
@@ -32,7 +32,7 @@
 		<Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type</Name>
-            <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way.
+            <Description>(Shared) — Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-023</Reference>
@@ -43,7 +43,7 @@
         <Element>
             <Term>cbc:ID</Term>
             <Name>Invoice number</Name>
-            <Description>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice 
+            <Description>(Shared) — A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice 
                 within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-001</Reference>
@@ -54,7 +54,7 @@
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Invoice issue date</Name>
-            <Description>The date when the Invoice was issued.</Description>
+            <Description>(Shared) — The date when the Invoice was issued.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-002</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
@@ -64,7 +64,7 @@
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Invoice issue date</Name>
-            <Description>The time of day when an invoice was issued.</Description>
+            <Description>(Shared) — The time of day when an invoice was issued.</Description>
             <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">IBT-168</Reference>
             <Value type="EXAMPLE">12:35</Value>
@@ -74,7 +74,7 @@
         <Element cardinality="0..1">
             <Term>cbc:DueDate</Term>
             <Name>Payment due date</Name>
-            <Description>The date when the payment is due.</Description>
+            <Description>(Shared) — The date when the payment is due.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-009</Reference>
              <Value type="EXAMPLE">2017-11-30</Value>
@@ -84,7 +84,7 @@
         <Element>
             <Term>cbc:InvoiceTypeCode</Term>
             <Name>Invoice type code</Name>
-            <Description>A code specifying the functional type of the Invoice.</Description>
+            <Description>(Shared) — A code specifying the functional type of the Invoice.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-003</Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
@@ -95,7 +95,7 @@
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
-            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.
+            <Description>(Shared) — A textual note that gives unstructured information that is relevant to the Invoice as a whole.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-022</Reference>
@@ -106,7 +106,7 @@
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
-            <Description>The subject of the textual note in EN BT-22.
+            <Description>(Shared) — The subject of the textual note in EN BT-022.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-22</Reference>
@@ -114,21 +114,23 @@
   			<Section>Shared</Section>
         </Element>
 
-        <Element cardinality="0..1">
+<!--         <Element cardinality="0..1">
             <Term>cbc:TaxPointDate</Term>
             <Name>TAX point date</Name>
-            <Description>The date when the TAX becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the TAX directive.
+            <Description>(Shared) — The date when the TAX becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the TAX directive.
             </Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-007</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
   			<Section>Aligned</Section>
-        </Element>
+        </Element> -->
+		
+		<Include>aligned/IBT-007-taxpointdate.xml</Include>
 
         <Element>
             <Term>cbc:DocumentCurrencyCode</Term>
             <Name>Invoice currency code</Name>
-            <Description>TThe currency in which all Invoice amounts are given, except for the Total TAX amount in accounting currency.
+            <Description>(Shared) — The currency in which all Invoice amounts are given, except for the Total TAX amount in accounting currency.
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-005</Reference>
