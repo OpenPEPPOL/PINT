@@ -3,7 +3,7 @@
 
         <Term>cac:Delivery</Term>
         <Name>DELIVERY INFORMATION</Name>
-        <Description>A group of business terms providing information about where and when the goods and services
+        <Description>(Shared) — A group of business terms providing information about where and when the goods and services
             invoiced are delivered.
         </Description>
         <Reference type="BUSINESS_TERM">IBG-13</Reference>
@@ -11,7 +11,7 @@
         <Element cardinality="0..1">
             <Term>cbc:ActualDeliveryDate</Term>
             <Name>Actual delivery date</Name>
-            <Description>The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
+            <Description>(Shared) — The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-72</Reference>
             <Value type="EXAMPLE">2017-12-01</Value>
@@ -24,7 +24,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
                 <Name>Deliver to location identifier</Name>
-                <Description>An identifier for the location at which the goods and services are delivered.</Description>
+                <Description>(Shared) — An identifier for the location at which the goods and services are delivered.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-071</Reference>
 				<Section>Shared</Section>            
@@ -32,7 +32,7 @@
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Deliver to location identifier identification scheme identifier</Name>
-                    <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
+                    <Description>(Shared) — The identification scheme identifier of the Deliver to location identifier.</Description>
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Value type="EXAMPLE">0088</Value>
                 </Attribute>
@@ -44,7 +44,7 @@
             <Element cardinality="0..1">
                 <Term>cac:Address</Term>
                 <Name>DELIVER TO ADDRESS</Name>
-                <Description>A group of business terms providing information about the address to which goods and services
+                <Description>(Shared) — A group of business terms providing information about the address to which goods and services
                     invoiced were or are delivered.
                 </Description>
                 <Reference type="BUSINESS_TERM">IBG-15</Reference>
@@ -52,7 +52,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:StreetName</Term>
                     <Name>Deliver to address line 1</Name>
-                    <Description>The main address line in an address.</Description>
+                    <Description>(Shared) — The main address line in an address.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-075</Reference>
                     <Value type="EXAMPLE">Delivery Street 1</Value>
@@ -62,7 +62,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:AdditionalStreetName</Term>
                     <Name>Deliver to address line 2</Name>
-                    <Description>An additional address line in an address that can be used to give further details supplementing the
+                    <Description>(Shared) — An additional address line in an address that can be used to give further details supplementing the
                         main line.
                     </Description>
                     <DataType>Text</DataType>
@@ -74,7 +74,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:CityName</Term>
                     <Name>Deliver to city</Name>
-                    <Description>The common name of the city, town or village, where the deliver to address is located.
+                    <Description>(Shared) — The common name of the city, town or village, where the deliver to address is located.
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-077</Reference>
@@ -85,7 +85,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:PostalZone</Term>
                     <Name>Deliver to post code</Name>
-                    <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    <Description>(Shared) — The identifier for an addressable group of properties according to the relevant postal service.
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-078</Reference>
@@ -96,7 +96,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:CountrySubentity</Term>
                     <Name>Deliver to country subdivision</Name>
-                    <Description>The subdivision of a country.</Description>
+                    <Description>(Shared) — The subdivision of a country.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-079</Reference>
                     <Value type="EXAMPLE">South Region</Value>
@@ -110,7 +110,7 @@
                     <Element>
                         <Term>cbc:Line</Term>
                         <Name>Deliver to address line 3</Name>
-                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                        <Description>(Shared) — An additional address line in an address that can be used to give further details supplementing the
                             main line.
                         </Description>
                         <DataType>Text</DataType>
@@ -127,7 +127,7 @@
                     <Element>
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Deliver to country code</Name>
-                        <Description>A code that identifies the country.</Description>
+                        <Description>(Shared) — A code that identifies the country.</Description>
                         <DataType>Code</DataType>
                         <Reference type="BUSINESS_TERM">IBT-080</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
@@ -149,7 +149,7 @@
                 <Element>
                     <Term>cbc:Name</Term>
                     <Name>Deliver to party name</Name>
-                    <Description>The name of the party to which the goods and services are delivered.</Description>
+                    <Description>(Shared) — The name of the party to which the goods and services are delivered.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-070</Reference>
                     <Value type="EXAMPLE">Deliver name</Value>
