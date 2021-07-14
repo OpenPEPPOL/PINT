@@ -375,7 +375,7 @@
 			<Include>aligned/IBT-178-payment_instructions_id.xml</Include>
 
 			<Element>
-				<Term>cbc:PaymentMeansCode</Term>
+<!-- 				<Term>cbc:PaymentMeansCode</Term>
 				<Name>Payment means type code</Name>
 				<Description>(Aligned) — The means, expressed as code, for how a payment is expected to be or has been settled.
 				</Description>
@@ -383,8 +383,9 @@
 				<Reference type="BUSINESS_TERM">IBT-081</Reference>
 				<Reference type="CODE_LIST">UNCL4461</Reference>
 				<Section>Aligned</Section>
-				<Value type="EXAMPLE">30</Value>
-			
+				<Value type="EXAMPLE">30</Value> -->
+
+				<Include>aligned/IBT-081-payment_means_type_code.xml</Include>			
 
 				<Attribute usage="Optional">
 						<Term>name</Term>
