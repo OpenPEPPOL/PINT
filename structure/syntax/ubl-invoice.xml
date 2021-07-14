@@ -372,7 +372,7 @@
         <Description>(Shared) — A group of business terms providing information about the payment.</Description>
         <Reference type="BUSINESS_TERM">IBG-16</Reference>
         
-			<Include>aligned/IBT-178-payment_instructions_id.xml.xml</Include>
+			<Include>aligned/IBT-178-payment_instructions_id.xml</Include>
 
 			<Element>
 				<Term>cbc:PaymentMeansCode</Term>
