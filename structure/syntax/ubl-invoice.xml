@@ -15,7 +15,7 @@
 
 		<!-- <xml:include file="shared/aligned.xml"/> -->
 		
-		<Include>shared/aligned.xml</Include>
+		<Include>aligned/aligned.xml</Include>
 		
         <Element>
             <Term>cbc:CustomizationID</Term>
