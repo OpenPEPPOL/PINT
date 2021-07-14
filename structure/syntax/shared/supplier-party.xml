@@ -195,7 +195,7 @@
 
             </Element>
             
-			<Include>aligned/IBT-031-seller_tax_identifier.xml</Include>
+			<Include>../aligned/IBT-031-seller_tax_identifier.xml</Include>
             
             <Element cardinality="0..1">
                 <Term>cac:PartyTaxScheme</Term>
