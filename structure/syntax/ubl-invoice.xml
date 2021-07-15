@@ -440,11 +440,11 @@
 
 		<Include>aligned/IBG-35-paid_amounts.xml</Include>
         
-        <Include>shared/allowance-charge.xml</Include>
+        <Include>shared/IBG-20-21-allowance-charge.xml</Include>
         
         <Include>shared/tax-total.xml</Include>
      
-        <Include>shared/monetary-totals.xml</Include>
+        <Include>shared/IBG-22-monetary-totals.xml</Include>
    
  <!-- Hingað -->
 
@@ -522,7 +522,7 @@
 				<Section>Shared</Section>
             </Element>
             
-            <Include>shared/line-period.xml</Include>
+            <Include>shared/IBG-26-line-period.xml</Include>
 
             <Element cardinality="0..1">
                 <Term>cac:OrderLineReference</Term>
