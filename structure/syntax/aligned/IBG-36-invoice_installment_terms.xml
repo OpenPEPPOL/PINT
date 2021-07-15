@@ -9,7 +9,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:PaymentMeansID</Term>
 				<Name>Terms payment instructions ID</Name>
-				<Description>The payment instructions that apply to these payment terms.</Description>
+				<Description>(Aligned) — The payment instructions that apply to these payment terms.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-187</Reference>
 				<Value type="EXAMPLE">1</Value>
@@ -19,7 +19,7 @@
 			<Element  cardinality="0..1">
 					<Term>cbc:Amount</Term>
 					<Name>Terms amount</Name>
-					<Description>The payment amount that these terms apply to.</Description>
+					<Description>(Aligned) — The payment amount that these terms apply to.</Description>
 					<DataType>Amount</DataType>
 					<Reference type="BUSINESS_TERM">IBT-176</Reference>
 					<Value type="EXAMPLE">100.00</Value>
@@ -29,7 +29,7 @@
 			<Element  cardinality="0..1">
 					<Term>cbc:InstallmentDueDate</Term>
 					<Name>Terms installment due date</Name>
-					<Description>The date before end of which the terms amount shall be settled.</Description>
+					<Description>(Aligned) — The date before end of which the terms amount shall be settled.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">IBT-177</Reference>
 					<Value type="EXAMPLE">2021-01-01</Value>
