@@ -3,13 +3,13 @@
     
         <Term>cac:InvoicePeriod</Term>
         <Name>INVOICE LINE PERIOD</Name>
-        <Description>A group of business terms providing information about the period relevant for the Invoice line.</Description>
+        <Description>(Shared) — A group of business terms providing information about the period relevant for the Invoice line.</Description>
         <Reference type="BUSINESS_TERM">IBG-26</Reference>
         
         <Element cardinality="0..1">
             <Term>cbc:StartDate</Term>
             <Name>Invoice line period start date</Name>
-            <Description>The date when the Invoice period for this Invoice line starts.</Description>
+            <Description>(Shared) — The date when the Invoice period for this Invoice line starts.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-134</Reference>
             <!-- <Reference type="RULE">ibr-co-20</Reference> -->
@@ -20,7 +20,7 @@
         <Element cardinality="0..1">
             <Term>cbc:EndDate</Term>
             <Name>Invoice line period end date</Name>
-            <Description>The date when the Invoice period for this Invoice line ends.</Description>
+            <Description>(Shared) — The date when the Invoice period for this Invoice line ends.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-135</Reference>
             <!-- <Reference type="RULE">ibr-30</Reference> -->
