@@ -339,7 +339,7 @@
 			
         </Element>   
 
-        <Include>shared/additional-docs.xml</Include>
+        <Include>shared/IBG-24-additional-docs.xml</Include>
       
         <Element cardinality="0..1">
             <Term>cac:ProjectReference</Term>
