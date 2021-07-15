@@ -356,15 +356,15 @@
             </Element>
         </Element>
 
-        <Include>shared/supplier-party.xml</Include>
+        <Include>shared/IBG-04-supplier-party.xml</Include>
         
-        <Include>shared/customer-party.xml</Include>
+        <Include>shared/IBG-07-customer-party.xml</Include>
         
-        <Include>shared/payee-party.xml</Include>
+        <Include>shared/IBG-10-payee-party.xml</Include>
 
         <Include>aligned/IBG-11-taxrep-party.xml</Include>
 
-        <Include>shared/delivery.xml</Include>
+        <Include>shared/IBG-13-delivery.xml</Include>
 
         <Element cardinality="0..n">
         <Term>cac:PaymentMeans</Term>
@@ -373,17 +373,6 @@
         <Reference type="BUSINESS_TERM">IBG-16</Reference>
         
 			<Include>aligned/IBT-178-payment_instructions_id.xml</Include>
-
-<!-- 		<Element>
-			<Term>cbc:PaymentMeansCode</Term>
-			<Name>Payment means type code</Name>
-			<Description>(Aligned) — The means, expressed as code, for how a payment is expected to be or has been settled.
-			</Description>
-			<DataType>Code</DataType>
-			<Reference type="BUSINESS_TERM">IBT-081</Reference>
-			<Reference type="CODE_LIST">UNCL4461</Reference>
-			<Section>Aligned</Section>
-			<Value type="EXAMPLE">30</Value> -->
 
 			<Include>aligned/IBT-081-payment_means_type_code.xml</Include>			
 
@@ -397,8 +386,6 @@
 					<Value type="EXAMPLE">Credit transfer</Value>
 					<Section>Shared</Section>
 			</Attribute>
- 
-			<!-- </Element>	 -->
 			
 			<Element cardinality="0..1">
 				<Term>cbc:PaymentID</Term>
@@ -410,11 +397,11 @@
 				<Section>Shared</Section>
 			</Element>
 
-            <Include>shared/card-payment.xml</Include>
+            <Include>shared/IBG-18-card-payment.xml</Include>
 
-            <Include>shared/credit-transfer.xml</Include>
+            <Include>shared/IBG-17-credit-transfer.xml</Include>
 
- 			<Include>shared/payment-mandate.xml</Include>
+ 			<Include>shared/IBG-19-payment-mandate.xml</Include>
 
         </Element>
 

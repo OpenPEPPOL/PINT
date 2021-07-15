@@ -6,7 +6,7 @@
         <Description>A group of business terms providing information about the Payee, i.e. the role that receives the
             payment.
         </Description>
-        <Reference type="BUSINESS_TERM">BG-10</Reference>
+        <Reference type="BUSINESS_TERM">IBG-10</Reference>
         
         <Element cardinality="0..1">
             <Term>cac:PartyIdentification</Term>
@@ -17,7 +17,7 @@
                 <Name>Payee identifier</Name>
                 <Description>(Shared) — An identifiers for the payee.</Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-60</Reference>
+                <Reference type="BUSINESS_TERM">IBT-060</Reference>
 				<Section>Shared</Section>
                 
                 <Attribute usage="Optional">
