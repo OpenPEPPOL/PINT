@@ -438,8 +438,6 @@
 
 		<Include>aligned/IBG-36-invoice_installment_terms.xml</Include>
 
- <!-- Hingað -->
-
 		<Include>aligned/IBG-35-paid_amounts.xml</Include>
         
         <Include>shared/allowance-charge.xml</Include>
@@ -448,6 +446,8 @@
      
         <Include>shared/monetary-totals.xml</Include>
    
+ <!-- Hingað -->
+
         <Element cardinality="1..n">
             <Term>cac:InvoiceLine</Term>
             <Name>INVOICE LINE</Name>
@@ -575,11 +575,11 @@
  
 			</Element>
             
-            <Include>shared/line-allowance-charge.xml</Include>
+            <Include>shared/IBG-27-28-line-allowance-charge.xml</Include>
 
-            <Include>shared/item.xml</Include>
+            <Include>shared/IBG-31-item.xml</Include>
               
-            <Include>shared/price.xml</Include>
+            <Include>shared/IBG-29-price.xml</Include>
           
         </Element>
     </Document>
