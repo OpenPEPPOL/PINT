@@ -304,7 +304,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[ibr-11]-The Buyer postal address (ibg-089 shall contain a Buyer country code (ibt-055).</svrl:text>
+          <svrl:text>[ibr-11]-The Buyer postal address (ibg-08 shall contain a Buyer country code (ibt-055).</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -361,7 +361,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-907) or a Document level allowance reason code (ibt-098).</svrl:text>
+          <svrl:text>[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098).</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -961,7 +961,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[ibr-co-07]-When both Invoice line allowance reason code (iibt-140) and Invoice line allowance reason (iibt-139) the definition of the code is normative.</svrl:text>
+          <svrl:text>[ibr-co-07]-When both Invoice line allowance reason code (ibt-140) and Invoice line allowance reason (ibt-139) the definition of the code is normative.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -1012,7 +1012,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[ibr-co-08]-When both Invoice line charge reason code (iibt-145) and Invoice line charge reason (iibt-144) the definition of the code is normative.</svrl:text>
+          <svrl:text>[ibr-co-08]-When both Invoice line charge reason code (ibt-145) and Invoice line charge reason (ibt-144) the definition of the code is normative.</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>
@@ -1183,7 +1183,7 @@
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
           </xsl:attribute>
-          <svrl:text>[ibr-17]-The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-4).</svrl:text>
+          <svrl:text>[ibr-17]-The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-04).</svrl:text>
         </svrl:failed-assert>
       </xsl:otherwise>
     </xsl:choose>

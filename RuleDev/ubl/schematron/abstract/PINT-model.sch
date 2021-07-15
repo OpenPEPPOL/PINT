@@ -30,14 +30,14 @@
     <assert test="$ibr-63" flag="fatal" id="ibr-63">[ibr-63]-The Buyer electronic address (ibt-049) shall have a Scheme identifier.    </assert>
   </rule>
   <rule context="$Buyer_postal_address">
-    <assert test="$ibr-11" flag="fatal" id="ibr-11">[ibr-11]-The Buyer postal address (ibg-089 shall contain a Buyer country code (ibt-055).</assert>
+    <assert test="$ibr-11" flag="fatal" id="ibr-11">[ibr-11]-The Buyer postal address (ibg-08 shall contain a Buyer country code (ibt-055).</assert>
   </rule>
   <rule context="$Deliver_to_address">
     <assert test="$ibr-57" flag="fatal" id="ibr-57">[ibr-57]-Each Deliver to address (ibg-15) shall contain a Deliver to country code (ibt-080).</assert>
   </rule>
   <rule context="$Document_level_allowances">
     <assert test="$ibr-31" flag="fatal" id="ibr-31">[ibr-31]-Each Document level allowance (ibg-20) shall have a Document level allowance amount (ibt-092).</assert>
-    <assert test="$ibr-33" flag="fatal" id="ibr-33">[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-907) or a Document level allowance reason code (ibt-098).</assert>
+    <assert test="$ibr-33" flag="fatal" id="ibr-33">[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098).</assert>
     <assert test="$ibr-co-05" flag="fatal" id="ibr-co-05">[ibr-co-05]-Document level allowance reason code (ibt-098) and Document level allowance reason (ibt-097) shall indicate the same type of allowance.</assert>
     <assert test="$ibr-co-21" flag="fatal" id="ibr-co-21">[ibr-co-21]-Each Document level allowance (ibg-20) shall contain a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098), or both.</assert>
   </rule>
@@ -85,12 +85,12 @@
   <rule context="$Invoice_line_allowances">
     <assert test="$ibr-41" flag="fatal" id="ibr-41">[ibr-41]-Each Invoice line allowance (ibg-27) shall have an Invoice line allowance amount (ibt-136).</assert>
     <assert test="$ibr-42" flag="fatal" id="ibr-42">[ibr-42]-Each Invoice line allowance (ibg-27) shall have an Invoice line allowance reason (ibt-139) or an Invoice line allowance reason code (ibt-140).</assert>
-    <assert test="$ibr-co-07" flag="fatal" id="ibr-co-07">[ibr-co-07]-When both Invoice line allowance reason code (iibt-140) and Invoice line allowance reason (iibt-139) the definition of the code is normative.</assert>
+    <assert test="$ibr-co-07" flag="fatal" id="ibr-co-07">[ibr-co-07]-When both Invoice line allowance reason code (ibt-140) and Invoice line allowance reason (ibt-139) the definition of the code is normative.</assert>
   </rule>
   <rule context="$Invoice_line_charges">
     <assert test="$ibr-43" flag="fatal" id="ibr-43">[ibr-43]-Each Invoice line charge (ibg-28) shall have an Invoice line charge amount (ibt-141).</assert>
     <assert test="$ibr-44" flag="fatal" id="ibr-44">[ibr-44]-Each Invoice line charge (ibg-28) shall have an Invoice line charge reason (ibt-144) or an invoice line allowance reason code (ibt-145). </assert>
-    <assert test="$ibr-co-08" flag="fatal" id="ibr-co-08">[ibr-co-08]-When both Invoice line charge reason code (iibt-145) and Invoice line charge reason (iibt-144) the definition of the code is normative.</assert>
+    <assert test="$ibr-co-08" flag="fatal" id="ibr-co-08">[ibr-co-08]-When both Invoice line charge reason code (ibt-145) and Invoice line charge reason (ibt-144) the definition of the code is normative.</assert>
     <assert test="$ibr-co-24" flag="fatal" id="ibr-co-24">[ibr-co-24]-Each Invoice line charge (ibg-28) shall contain an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145), or both.</assert>
   </rule>
   <rule context="$Invoice_Line_Period">
@@ -111,7 +111,7 @@
     <assert test="$ibr-64" flag="fatal" id="ibr-64">[ibr-64]-The Item standard identifier (ibt-157) shall have a Scheme identifier.</assert>
   </rule>
   <rule context="$Payee">
-    <assert test="$ibr-17" flag="fatal" id="ibr-17">[ibr-17]-The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-4).</assert>
+    <assert test="$ibr-17" flag="fatal" id="ibr-17">[ibr-17]-The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-04).</assert>
   </rule>
   <rule context="$Payment_instructions">
     <assert test="$ibr-49" flag="fatal" id="ibr-49">[ibr-49]-A Payment instruction (ibg-16) shall specify the Payment means type code (ibt-081).</assert>
