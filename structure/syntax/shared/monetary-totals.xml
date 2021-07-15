@@ -3,13 +3,13 @@
     
 	<Term>cac:LegalMonetaryTotal</Term>
 	<Name>DOCUMENT TOTALS</Name>
-	<Description>A group of business terms providing the monetary totals for the Invoice.</Description>
+	<Description>(Shared) — A group of business terms providing the monetary totals for the Invoice.</Description>
 	<Reference type="BUSINESS_TERM">IBG-22</Reference>
 	
 	<Element>
 		<Term>cbc:LineExtensionAmount</Term>
 		<Name>Sum of Invoice line net amount</Name>
-		<Description>Sum of all Invoice line net amounts in the Invoice.</Description>
+		<Description>(Shared) — Sum of all Invoice line net amounts in the Invoice.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-106</Reference>
 		<!-- <Reference type="RULE">ibr-12</Reference> -->
@@ -19,7 +19,7 @@
 
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -28,7 +28,7 @@
 	<Element>
 		<Term>cbc:TaxExclusiveAmount</Term>
 		<Name>Invoice total amount without TAX</Name>
-		<Description>The total amount of the Invoice without TAX.</Description>
+		<Description>(Shared) — The total amount of the Invoice without TAX.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">BT-109</Reference>
 		<!-- <Reference type="RULE">ibr-13</Reference> -->
@@ -38,7 +38,7 @@
 
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -47,7 +47,7 @@
 	<Element>
 		<Term>cbc:TaxInclusiveAmount</Term>
 		<Name>Invoice total amount with TAX</Name>
-		<Description>The total amount of the Invoice with TAX.</Description>
+		<Description>(Shared) — The total amount of the Invoice with TAX.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-112</Reference>
 		<!-- <Reference type="RULE">ibr-14</Reference> -->
@@ -57,7 +57,7 @@
 
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -66,7 +66,7 @@
 	<Element cardinality="0..1">
 		<Term>cbc:AllowanceTotalAmount</Term>
 		<Name>Sum of allowances on document level</Name>
-		<Description>Sum of all allowances on document level in the Invoice.</Description>
+		<Description>(Shared) — Sum of all allowances on document level in the Invoice.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-107</Reference>
 		<!-- <Reference type="RULE">ibr-co-11</Reference> -->
@@ -75,7 +75,7 @@
 
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -84,7 +84,7 @@
 	<Element cardinality="0..1">
 		<Term>cbc:ChargeTotalAmount</Term>
 		<Name>Sum of charges on document level</Name>
-		<Description>Sum of all charges on document level in the Invoice.</Description>
+		<Description>(Shared) — Sum of all charges on document level in the Invoice.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-108</Reference>
 		<!-- <Reference type="RULE">ibr-co-12</Reference> -->
@@ -93,7 +93,7 @@
 
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -102,7 +102,7 @@
 	<Element cardinality="0..1">
 		<Term>cbc:PrepaidAmount</Term>
 		<Name>Paid amount</Name>
-		<Description>The sum of amounts which have been paid in advance.</Description>
+		<Description>(Shared) — The sum of amounts which have been paid in advance.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-113</Reference>
 		<Value type="EXAMPLE">1000.0</Value>
@@ -110,7 +110,7 @@
 		
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -119,14 +119,14 @@
 	<Element cardinality="0..1">
 		<Term>cbc:PayableRoundingAmount</Term>
 		<Name>Rounding amount</Name>
-		<Description>The amount to be added to the invoice total to round the amount to be paid.</Description>
+		<Description>(Shared) — The amount to be added to the invoice total to round the amount to be paid.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">BT-114</Reference>
 		<Section>Shared</Section>		
 
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
@@ -135,7 +135,7 @@
 	<Element>
 		<Term>cbc:PayableAmount</Term>
 		<Name>Amount due for payment</Name>
-		<Description>The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.</Description>
+		<Description>(Shared) — The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">BT-115</Reference>
 		<!-- <Reference type="RULE">ibr-15</Reference> -->
@@ -145,7 +145,7 @@
 		
 		<Attribute>
 			<Term>currencyID</Term>
-			<Description>Mandatory attribute. Use BT-005</Description>
+			<Description>(Shared) — Mandatory attribute. Use BT-005</Description>
 			<Reference type="CODE_LIST">ISO4217</Reference>
 			<Value type="EXAMPLE">EUR</Value>
 		</Attribute>
