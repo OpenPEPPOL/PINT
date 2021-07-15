@@ -414,7 +414,9 @@
 
             <Include>shared/credit-transfer.xml</Include>
 
-            <Include>shared/payment-mandate.xml</Include>
+ <!-- Hingað -->
+
+			<Include>shared/payment-mandate.xml</Include>
 
         </Element>
 
