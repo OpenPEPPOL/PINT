@@ -1,5 +1,4 @@
 # PINT syntax instruction
-PINT syntax instruction
 
 The main files are the ubl-invoice.xml and the ubl-creditnote.xml file. They contain only shared PINT business terms or inclusions. The inclusions may be either from the shared folder or from the aligned folder.
 
