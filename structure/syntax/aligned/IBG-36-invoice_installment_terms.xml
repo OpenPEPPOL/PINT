@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
  
             <Term>cac:PaymentTerms</Term>
             <Name>INVOICE INSTALLMENT TERMS</Name>
